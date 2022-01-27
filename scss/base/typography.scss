@@ -1,0 +1,12 @@
+@use '../helpers/fonts' as *;
+/* 
+    typography classes matches the keys
+    of ./fonts.scss $fonts map
+*/
+@each $label, $value in $fonts {
+  .#{$label} {
+    @each $property, $val in $value {
+      #{$property}: #{$val};
+    }
+  }
+}

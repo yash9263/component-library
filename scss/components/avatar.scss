@@ -1,0 +1,29 @@
+@use '../helpers/index.scss' as helper;
+
+.avatar {
+  @include helper.circle(3.125rem);
+  overflow: hidden;
+}
+
+.avatar-sm {
+  @include helper.circle(2rem);
+}
+
+.avatar-md {
+  @include helper.circle(4rem);
+}
+
+.avatar-lg {
+  @include helper.circle(4.875rem);
+}
+
+.avatar-img {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+.avatar-bg {
+  @include helper.flex-center;
+  background-color: var(--color-secondary-500);
+  color: var(--bg-color);
+}

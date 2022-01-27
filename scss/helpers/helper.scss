@@ -11,8 +11,8 @@
     }
   }
 
-  --bg-color: var(--neutral-100);
-  --text-color: var(--neutral-900);
+  --bg-color: var(--color-neutral-100);
+  --text-color: var(--color-neutral-900);
 
   /* font-family */
   --font-family: #{helper.$system-font};
@@ -22,27 +22,12 @@
   --font-weight-semi-bold: #{helper.$font-weight-semi-bold};
   --font-weight-regular: #{helper.$font-weight-regular};
 
-  /* spacing */
-  @each $label, $value in helper.$spacing {
-    --space-#{$label}: #{$value};
-  }
-
   --border-radius: 4px;
+  --border-color: var(--color-neutral-200);
   /*
   TODO:
     add outline ring color
-    
+    add box-shadows variables
+    add border-color
     */
-}
-
-/* 
-    typography classes matches the keys
-    of ./fonts.scss $fonts map
-*/
-@each $label, $value in helper.$fonts {
-  .#{$label} {
-    @each $property, $val in $value {
-      #{$property}: #{$val};
-    }
-  }
 }

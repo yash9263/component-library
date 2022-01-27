@@ -1,0 +1,20 @@
+.docs-main {
+  /*
+    giving space to the sidebar
+    padding-left same as sidebar width
+  */
+  padding-left: 260px;
+  /*
+    giving space to the navbar
+    padding-top: same as sidebar height
+  */
+  padding-top: 64px;
+  height: 200vh;
+}
+
+.docs-section {
+}
+
+.docs-article {
+  padding: 24px 32px;
+}
