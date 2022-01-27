@@ -1,0 +1,79 @@
+// Square elements
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+// Circle elements
+@mixin circle($size) {
+  @include square($size);
+  border-radius: 50%;
+}
+
+// Pseudo default
+@mixin pseudo {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+// Flexbox
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-x {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-center-y {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-col-center {
+  @include flex-center;
+  flex-direction: column;
+}
+
+// Breakpoints
+$breakpoints: (
+  'mobile': (
+    max-width: 425px,
+  ),
+  'tablet': (
+    max-width: 768px,
+  ),
+  'laptop': (
+    max-width: 1024px,
+  ),
+  'desktop': (
+    max-width: 1200px,
+  ),
+);
+
+// Desktop first approach
+/*
+    reference: https://sass-guidelin.es/#responsive-web-design-and-breakpoints
+*/
+@mixin media-for($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if ($raw-query) {
+    $query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect);
+
+    @media #{query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for #{breakpoint}. Make sure it is defined in `$breakpoints` map.';
+  }
+}

@@ -1,0 +1,43 @@
+/* Using https://sass-guidelin.es/ as style guide  */
+/* 7-1 pattern for folder structure */
+
+/* Helpers */
+@import 'helpers/colors';
+@import 'helpers/fonts';
+@import 'helpers/helper';
+@import 'helpers/index';
+@import 'helpers/mixins';
+@import 'helpers/spacing';
+
+/* Vendors */
+@import 'vendors/normalize';
+
+/* Basic styles */
+@import 'base/reset';
+@import 'base/global';
+@import 'base/typography';
+@import 'base/shame';
+
+/* Components */
+@import 'components/alerts';
+@import 'components/banners';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+@import 'components/icons';
+@import 'components/menu';
+@import 'components/modals';
+@import 'components/progress';
+
+/* Layouts */
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+
+/* Pages */
+@import 'pages/home';
+
+/* Themes */
+@import 'themes/dark';

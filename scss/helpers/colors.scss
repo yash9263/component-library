@@ -1,0 +1,86 @@
+@use 'sass:color';
+@use 'sass:map';
+
+$primary: hsl(187, 71%, 50%);
+$secondary: hsl(201, 87%, 37%);
+$success: hsl(137, 44%, 35%);
+$danger: hsl(4, 73%, 47%);
+$warning: hsl(29, 69%, 52%);
+
+$neutral: (
+  'neutral-900': hsl(240, 22%, 17%),
+  'neutral-800': hsl(240, 21%, 25%),
+  'neutral-700': hsl(240, 18%, 35%),
+  'neutral-600': hsl(240, 14%, 46%),
+  'neutral-500': hsl(240, 14%, 61%),
+  'neutral-400': hsl(240, 13%, 69%),
+  'neutral-300': hsl(240, 14%, 78%),
+  'neutral-200': hsl(240, 13%, 88%),
+  'neutral-150': hsl(240, 14%, 93%),
+  'neutral-100': hsl(240, 20%, 97%),
+);
+
+/*
+    Map for generating shades from the given color
+*/
+$shades: (
+  '500': -30%,
+  '400': 0%,
+  '300': 30%,
+  '200': 60%,
+  '100': 90%,
+);
+
+// generating shades
+/*
+    Creates Shades for given color using shades map
+    params -> color = from which to generate shades
+    list -> can give a map of percentage to lighten the base color like below shades
+    basename -> base name for the color
+
+    returns a map of shades 
+    example 
+        (
+            "primary-500": #1a8a99, 
+            "primary-400": #25c5da, 
+            "primary-300": #66d6e5, 
+            "primary-200": #a8e8f0, 
+            "primary-100": #e9f9fb)
+        )
+    primary is the base name 
+    100, 200 taking form the shades map
+    TODO: convert all the colors to hsl format currently it is outputting colors in hex
+*/
+
+@function createShades($color, $list, $baseName) {
+  $shadesList: ();
+  @each $shade, $per in $list {
+    $map: ();
+    $map: map-merge(
+      $map,
+      (
+        '#{$baseName}-#{$shade}': color.scale($color, $lightness: $per),
+      )
+    );
+    $shadesList: map-merge($shadesList, $map);
+  }
+  @return $shadesList;
+}
+
+/*
+    TODO:
+    - add accent colors 
+    - add dark mode colors
+    optional
+    - use scss map for mapping all colors
+*/
+$colors: (
+  'primary': createShades(hsl(187, 71%, 50%), $shades, 'primary'),
+  'secondary': createShades(hsl(201, 87%, 37%), $shades, 'secondary'),
+  'success': createShades(hsl(137, 44%, 35%), $shades, 'success'),
+  'danger': createShades(hsl(4, 73%, 47%), $shades, 'danger'),
+  'warning': createShades(hsl(29, 69%, 52%), $shades, 'warning'),
+  'neutral': $neutral,
+);
+
+// @debug $colors;

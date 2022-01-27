@@ -1,0 +1,349 @@
+/* Using https://sass-guidelin.es/ as style guide  */
+/* 7-1 pattern for folder structure */
+/* Helpers */
+/*
+    Map for generating shades from the given color
+*/
+/*
+    Creates Shades for given color using shades map
+    params -> color = from which to generate shades
+    list -> can give a map of percentage to lighten the base color like below shades
+    basename -> base name for the color
+
+    returns a map of shades 
+    example 
+        (
+            "primary-500": #1a8a99, 
+            "primary-400": #25c5da, 
+            "primary-300": #66d6e5, 
+            "primary-200": #a8e8f0, 
+            "primary-100": #e9f9fb)
+        )
+    primary is the base name 
+    100, 200 taking form the shades map
+    TODO: convert all the colors to hsl format currently it is outputting colors in hex
+*/
+/*
+    TODO:
+    - add accent colors 
+    - add dark mode colors
+    optional
+    - use scss map for mapping all colors
+*/
+/*
+    Map for generating shades from the given color
+*/
+/*
+    Creates Shades for given color using shades map
+    params -> color = from which to generate shades
+    list -> can give a map of percentage to lighten the base color like below shades
+    basename -> base name for the color
+
+    returns a map of shades 
+    example 
+        (
+            "primary-500": #1a8a99, 
+            "primary-400": #25c5da, 
+            "primary-300": #66d6e5, 
+            "primary-200": #a8e8f0, 
+            "primary-100": #e9f9fb)
+        )
+    primary is the base name 
+    100, 200 taking form the shades map
+    TODO: convert all the colors to hsl format currently it is outputting colors in hex
+*/
+/*
+    TODO:
+    - add accent colors 
+    - add dark mode colors
+    optional
+    - use scss map for mapping all colors
+*/
+/*
+    Map for generating shades from the given color
+*/
+/*
+    Creates Shades for given color using shades map
+    params -> color = from which to generate shades
+    list -> can give a map of percentage to lighten the base color like below shades
+    basename -> base name for the color
+
+    returns a map of shades 
+    example 
+        (
+            "primary-500": #1a8a99, 
+            "primary-400": #25c5da, 
+            "primary-300": #66d6e5, 
+            "primary-200": #a8e8f0, 
+            "primary-100": #e9f9fb)
+        )
+    primary is the base name 
+    100, 200 taking form the shades map
+    TODO: convert all the colors to hsl format currently it is outputting colors in hex
+*/
+/*
+    TODO:
+    - add accent colors 
+    - add dark mode colors
+    optional
+    - use scss map for mapping all colors
+*/
+/*
+    reference: https://sass-guidelin.es/#responsive-web-design-and-breakpoints
+*/
+/*
+    Adding variables to root element
+*/
+:root {
+  /* colors */
+  --color-primary-500: #1a8a99;
+  --color-primary-400: #25c5da;
+  --color-primary-300: #66d6e5;
+  --color-primary-200: #a8e8f0;
+  --color-primary-100: #e9f9fb;
+  --color-secondary-500: #09537c;
+  --color-secondary-400: #0c77b0;
+  --color-secondary-300: #2dacf0;
+  --color-secondary-200: #87d0f7;
+  --color-secondary-100: #e1f3fd;
+  --color-success-500: #235a33;
+  --color-success-400: #328148;
+  --color-success-300: #58be75;
+  --color-success-200: #a0dab0;
+  --color-success-100: #e7f6eb;
+  --color-danger-500: #911f17;
+  --color-danger-400: #cf2c20;
+  --color-danger-300: #e5655b;
+  --color-danger-200: #f0a7a1;
+  --color-danger-100: #fbe9e8;
+  --color-warning-500: #9d5b1d;
+  --color-warning-400: #d98230;
+  --color-warning-300: #e4a76e;
+  --color-warning-200: #f0cdac;
+  --color-warning-100: #fbf2ea;
+  --color-neutral-900: #222235;
+  --color-neutral-800: #32324d;
+  --color-neutral-700: #494969;
+  --color-neutral-600: #656586;
+  --color-neutral-500: #8e8ea9;
+  --color-neutral-400: #a6a6ba;
+  --color-neutral-300: #bfbfcf;
+  --color-neutral-200: #dcdce4;
+  --color-neutral-150: #ebebf0;
+  --color-neutral-100: #f6f6f9;
+  --bg-color: var(--neutral-100);
+  --text-color: var(--neutral-900);
+  /* font-family */
+  --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  /* fonts */
+  --font-weight-bold: 600;
+  --font-weight-semi-bold: 500;
+  --font-weight-regular: 400;
+  /* spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+  --space-11: 44px;
+  --border-radius: 4px;
+  /*
+  TODO:
+    add outline ring color
+
+    */
+}
+
+/* 
+    typography classes matches the keys
+    of ./fonts.scss $fonts map
+*/
+.header-1 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.header-2 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.header-3 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.body {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.body-highlight {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.button-text {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.small-text {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.small-button-text {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.table-label {
+  font-weight: 600;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+/*
+    Map for generating shades from the given color
+*/
+/*
+    Creates Shades for given color using shades map
+    params -> color = from which to generate shades
+    list -> can give a map of percentage to lighten the base color like below shades
+    basename -> base name for the color
+
+    returns a map of shades 
+    example 
+        (
+            "primary-500": #1a8a99, 
+            "primary-400": #25c5da, 
+            "primary-300": #66d6e5, 
+            "primary-200": #a8e8f0, 
+            "primary-100": #e9f9fb)
+        )
+    primary is the base name 
+    100, 200 taking form the shades map
+    TODO: convert all the colors to hsl format currently it is outputting colors in hex
+*/
+/*
+    TODO:
+    - add accent colors 
+    - add dark mode colors
+    optional
+    - use scss map for mapping all colors
+*/
+/*
+    reference: https://sass-guidelin.es/#responsive-web-design-and-breakpoints
+*/
+/*
+    reference: https://sass-guidelin.es/#responsive-web-design-and-breakpoints
+*/
+/* Vendors */
+/* Basic styles */
+/*
+   css reset
+*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Components */
+/* Layouts */
+/* Pages */
+/* Themes */
+
+/*# sourceMappingURL=style.css.map */
