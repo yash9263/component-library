@@ -1,10 +1,10 @@
-@use '../helpers/index.scss' as helper;
-
 .navbar {
   position: fixed;
   width: 100%;
   top: 0;
-  @include helper.flex-center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0px 32px;
   gap: 32px;
   border-bottom: 1px solid var(--border-color);
@@ -15,6 +15,7 @@
 .blur {
   background-color: var(--bg-color);
 }
+
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .blur {
     background-color: revert;
@@ -25,16 +26,22 @@
   flex: 1;
   justify-content: flex-start;
 }
+
 .nav-links {
-  @include helper.flex-center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
+
 .nav-link {
   margin-left: 16px;
 }
 
 .nav-items {
-  @include helper.flex-center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
   justify-content: flex-end;
 }

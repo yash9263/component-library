@@ -1,0 +1,34 @@
+/*
+  Base styles
+*/
+@import './base/reset.css';
+@import './base/global.css';
+@import './base/root.css';
+@import './base/typography.css';
+
+/*
+  TODO: Add utilites eg: flex, margin, padding, text-align, link-styles
+  @import 'utilites';
+*/
+/*
+  Component styles
+*/
+@import './components/alerts.css';
+@import './components/avatar.css';
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+
+/*
+  Layout styles
+*/
+@import './layout/header.css';
+@import './layout/sidebar.css';
+@import './layout/footer.css';
+@import './layout/grid.css';
+
+/*
+  Page styles
+*/
+@import './pages/home.css';
+@import './pages/docs.css';

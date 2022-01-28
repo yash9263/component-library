@@ -4,23 +4,16 @@
   "description": "A basic component library using scss",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass scss/main.scss css/style.css --watch",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "stylelint": "stylelint \"**/*.scss\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "scss"
+    "component library"
   ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.7.0",
-    "sass": "^1.49.0",
-    "stylelint": "^14.3.0",
-    "stylelint-config-standard-scss": "^3.0.0",
-    "stylelint-scss": "^4.1.0"
+    "stylelint": "^14.3.0"
   },
   "dependencies": {}
 }

@@ -1,0 +1,59 @@
+:root {
+  /* colors */
+  --color-primary-500: #1a8a99;
+  --color-primary-400: #25c5da;
+  --color-primary-300: #66d6e5;
+  --color-primary-200: #a8e8f0;
+  --color-primary-100: #e9f9fb;
+  --color-secondary-500: #09537c;
+  --color-secondary-400: #0c77b0;
+  --color-secondary-300: #2dacf0;
+  --color-secondary-200: #87d0f7;
+  --color-secondary-100: #e1f3fd;
+  --color-success-500: #235a33;
+  --color-success-400: #328148;
+  --color-success-300: #58be75;
+  --color-success-200: #a0dab0;
+  --color-success-100: #e7f6eb;
+  --color-danger-500: #911f17;
+  --color-danger-400: #cf2c20;
+  --color-danger-300: #e5655b;
+  --color-danger-200: #f0a7a1;
+  --color-danger-100: #fbe9e8;
+  --color-warning-500: #9d5b1d;
+  --color-warning-400: #d98230;
+  --color-warning-300: #e4a76e;
+  --color-warning-200: #f0cdac;
+  --color-warning-100: #fbf2ea;
+  --color-neutral-900: #222235;
+  --color-neutral-800: #32324d;
+  --color-neutral-700: #494969;
+  --color-neutral-600: #656586;
+  --color-neutral-500: #8e8ea9;
+  --color-neutral-400: #a6a6ba;
+  --color-neutral-300: #bfbfcf;
+  --color-neutral-200: #dcdce4;
+  --color-neutral-150: #ebebf0;
+  --color-neutral-100: #f6f6f9;
+  --bg-color: var(--color-neutral-100);
+  --text-color: var(--color-neutral-900);
+
+  /* font-family */
+  --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+  /* fonts */
+  --font-weight-bold: 600;
+  --font-weight-semi-bold: 500;
+  --font-weight-regular: 400;
+  --border-radius: 4px;
+  --border-color: var(--color-neutral-200);
+  --box-shadow-color: hsla(240, 13%, 88%, 0.4);
+
+  /*
+  TODO:
+    add outline ring color
+    add box-shadows variables
+    add border-color
+    */
+}

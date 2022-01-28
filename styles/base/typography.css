@@ -1,0 +1,54 @@
+.header-1 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.header-2 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.header-3 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.body {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.body-highlight {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.button-text {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.small-text {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.small-button-text {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.table-label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
