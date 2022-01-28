@@ -141,6 +141,7 @@
   --font-weight-regular: 400;
   --border-radius: 4px;
   --border-color: var(--color-neutral-200);
+  --box-shadow-color: hsla(240, 13%, 88%, 0.4);
   /*
   TODO:
     add outline ring color
@@ -299,35 +300,6 @@ body {
   color: var(--text-color);
 }
 
-/*
-    Map for generating shades from the given color
-*/
-/*
-    Creates Shades for given color using shades map
-    params -> color = from which to generate shades
-    list -> can give a map of percentage to lighten the base color like below shades
-    basename -> base name for the color
-
-    returns a map of shades 
-    example 
-        (
-            "primary-500": #1a8a99, 
-            "primary-400": #25c5da, 
-            "primary-300": #66d6e5, 
-            "primary-200": #a8e8f0, 
-            "primary-100": #e9f9fb)
-        )
-    primary is the base name 
-    100, 200 taking form the shades map
-    TODO: convert all the colors to hsl format currently it is outputting colors in hex
-*/
-/*
-    TODO:
-    - add accent colors 
-    - add dark mode colors
-    optional
-    - use scss map for mapping all colors
-*/
 /* 
     typography classes matches the keys
     of ./fonts.scss $fonts map
@@ -350,45 +322,39 @@ body {
   line-height: 1.25rem;
 }
 
-.subtitle {
+.body {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-.body {
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1rem;
-}
-
 .body-highlight {
   font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .button-text {
   font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .small-text {
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1rem;
 }
 
 .small-button-text {
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1rem;
 }
 
 .table-label {
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1rem;
   text-transform: uppercase;
 }
@@ -429,26 +395,26 @@ body {
 .avatar {
   width: 3.125rem;
   height: 3.125rem;
-  border-radius: 50%;
+  border-radius: 500px;
   overflow: hidden;
 }
 
 .avatar-sm {
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
+  border-radius: 500px;
 }
 
 .avatar-md {
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
+  border-radius: 500px;
 }
 
 .avatar-lg {
   width: 4.875rem;
   height: 4.875rem;
-  border-radius: 50%;
+  border-radius: 500px;
 }
 
 .avatar-img {
@@ -456,11 +422,27 @@ body {
   object-position: 50% 50%;
 }
 
-.avatar-bg {
+.avatar-bg-s {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-secondary-500);
+  color: var(--bg-color);
+}
+
+.avatar-bg-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-500);
+  color: var(--bg-color);
+}
+
+.avatar-bg-n {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-neutral-800);
   color: var(--bg-color);
 }
 
@@ -504,10 +486,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
+  padding: 0px 32px;
   gap: 32px;
   border-bottom: 1px solid var(--border-color);
   height: 64px;
+  z-index: 9;
 }
 
 .blur {
@@ -517,7 +500,7 @@ body {
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .blur {
     background-color: revert;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(25px);
   }
 }
 .nav-logo {
@@ -572,6 +555,9 @@ body {
 }
 
 .aside-nav-item:hover {
+  /* 
+    check for box shadow inset for effect
+  */
   background-color: var(--color-primary-200);
 }
 
@@ -596,6 +582,46 @@ body {
 
 .docs-article {
   padding: 24px 32px;
+  margin-bottom: 24px;
+}
+
+.docs-text {
+  margin: 16px auto;
+}
+
+.docs-example {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: inset 0px 0px 8px 4px var(--box-shadow-color);
+}
+
+.docs-code-example {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.code-iframe {
+  width: 100%;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+/*
+  avatar section
+*/
+.avatar-example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.avatar-iframe {
+  height: 180px;
 }
 
 /* Themes */

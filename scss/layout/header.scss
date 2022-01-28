@@ -5,10 +5,11 @@
   width: 100%;
   top: 0;
   @include helper.flex-center;
-  padding: 16px 32px;
+  padding: 0px 32px;
   gap: 32px;
   border-bottom: 1px solid var(--border-color);
   height: 64px;
+  z-index: 9;
 }
 
 .blur {
@@ -17,7 +18,7 @@
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .blur {
     background-color: revert;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(25px);
   }
 }
 .nav-logo {

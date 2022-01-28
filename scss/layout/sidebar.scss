@@ -24,6 +24,9 @@
   transition: background 100ms ease-in;
 }
 .aside-nav-item:hover {
+  /* 
+    check for box shadow inset for effect
+  */
   background-color: var(--color-primary-200);
 }
 .aside-nav-item-active {

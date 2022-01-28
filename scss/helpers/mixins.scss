@@ -7,7 +7,7 @@
 // Circle elements
 @mixin circle($size) {
   @include square($size);
-  border-radius: 50%;
+  border-radius: 500px;
 }
 
 // Pseudo default

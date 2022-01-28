@@ -17,4 +17,41 @@
 
 .docs-article {
   padding: 24px 32px;
+  margin-bottom: 24px;
+}
+
+.docs-text {
+  margin: 16px auto;
+}
+.docs-example {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: inset 0px 0px 8px 4px var(--box-shadow-color);
+}
+.docs-code-example {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.code-iframe {
+  width: 100%;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+/*
+  avatar section
+*/
+
+.avatar-example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.avatar-iframe {
+  height: 180px;
 }
