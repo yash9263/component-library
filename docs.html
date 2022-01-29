@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
     <title>Documentation</title>
     <link rel="stylesheet" href="styles/main.css" />
   </head>
@@ -36,7 +38,7 @@
           <a href="#avatar">
             <li class="aside-nav-item header-2 bg">avatar</li>
           </a>
-          <a href="#alert">
+          <a href="#alerts">
             <li class="aside-nav-item header-2">alert</li>
           </a>
         </ul>
@@ -136,11 +138,16 @@
         </article>
       </section>
       <!-- Avatar Section -->
-      <!-- Article Section -->
+      <!-- Article Section
+        TODO: normal alerts 
+              alerts with icons
+              alerts with close button
+      -->
       <section id="alerts">
         <article class="docs-article">
           <h1 class="header-1">
             <!-- Component Name -->
+            Alerts
           </h1>
           <p class="docs-text">
             <!-- Component explaination text -->
@@ -148,17 +155,33 @@
           <p class="docs-text">
             <!-- Usage instruction -->
           </p>
-          <div class="docs-example">
+          <div class="docs-example alerts-example">
             <!-- Example of component looks-->
+            <div class="alert alert-primary" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
+            <div class="alert alert-neutral" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
+            <div class="alert alert-success" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
+            <div class="alert alert-danger" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
+            <div class="alert alert-warning" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
           </div>
           <div class="docs-code-example">
             <!-- Iframe will go here -->
           </div>
         </article>
-        <!-- Component Variants -->
+        <!-- Aler with icons Variants -->
         <article class="docs-article">
           <h2 class="header-2">
             <!-- Variant name -->
+            Alert with Icons
           </h2>
           <p class="docs-text">
             <!-- Variant explaination text -->
@@ -166,11 +189,70 @@
           <p class="docs-text">
             <!-- Usage instruction -->
           </p>
-          <p class="docs-text">
-            <!-- Example showing component variants usage. -->
-          </p>
-          <div class="docs-example">
+          <div class="docs-example alerts-example">
             <!-- Examples of variant looks -->
+            <div class="alert alert-primary flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-info-circle alert-icon primary-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+
+            <div class="alert alert-neutral flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-info-circle alert-icon neutral-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+
+            <div class="alert alert-success flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-check-circle alert-icon success-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+
+            <div class="alert alert-danger flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-error alert-icon danger-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+
+            <div class="alert alert-warning flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-error alert-icon warning-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <!-- Iframe will go here -->
+          </div>
+        </article>
+        <!-- Alert with dismiss Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Alert with dismiss name -->
+            Alerts with dismiss
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+          </p>
+          <div class="docs-example alerts-example">
+            <!-- Examples of variant looks -->
+            <div class="alert alert-primary flex-center-y alert-dismissible" role="alert">
+              <i class="bx bxs-info-circle alert-icon primary-icon"></i>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo incidunt praesentium earum,
+              aliquam illo, odit inventore, aspernatur enim quibusdam sit totam aliquid corporis recusandae
+              labore placeat atque beatae! Quidem, facere.
+              <button class="dismiss-btn">
+                <i class="bx bx-x dismiss-icon"></i>
+              </button>
+            </div>
           </div>
           <div class="docs-code-example">
             <!-- Iframe will go here -->
