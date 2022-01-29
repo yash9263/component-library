@@ -9,6 +9,8 @@
     padding-top: same as sidebar height
   */
   padding-top: 64px;
+  max-width: calc(260px + 860px);
+  margin: 0 auto;
 }
 .docs-section {
 }
@@ -22,12 +24,22 @@
 
 .docs-example {
   margin-bottom: 16px;
-  padding: 16px;
+  padding: 24px 16px;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   box-shadow: inset 0px 0px 8px 4px var(--box-shadow-color);
 }
-
+/*
+  code highlight
+*/
+pre {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+code {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
 .docs-code-example {
   width: 100%;
   margin-top: 24px;

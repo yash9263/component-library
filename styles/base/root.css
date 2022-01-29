@@ -35,7 +35,8 @@
   --color-neutral-200: #dcdce4;
   --color-neutral-150: #ebebf0;
   --color-neutral-100: #f6f6f9;
-  --bg-color: var(--color-neutral-100);
+  --color-white: #fff;
+  --bg-color: var(--color-white);
   --text-color: var(--color-neutral-900);
 
   /* font-family */

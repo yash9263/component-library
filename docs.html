@@ -7,6 +7,11 @@
     <!-- Box Icons -->
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
     <title>Documentation</title>
+    <!-- Code Highlight (highlight.js cdn) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/xcode.min.css"
+    />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
@@ -35,12 +40,9 @@
       <nav class="aside-nav">
         <div class="aside-nav-title header-3">component list</div>
         <ul class="aside-nav-items">
-          <a href="#avatar">
-            <li class="aside-nav-item header-2 bg">avatar</li>
-          </a>
-          <a href="#alerts">
-            <li class="aside-nav-item header-2">alert</li>
-          </a>
+          <li class="aside-nav-item header-2 bg"><a href="#avatar">avatar</a></li>
+
+          <li class="aside-nav-item header-2"><a href="#alert">alert</a></li>
         </ul>
       </nav>
     </aside>
@@ -93,12 +95,18 @@
           </div>
 
           <div class="docs-code-example">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520src%253D%2522shorturl.at%252FprDF3%2522%2520class%253D%2522avatar-img%2522%2520alt%253D%2522portrait%2522%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522shorturl.at%252FevzP3%2522%2520class%253D%2522avatar-img%2522%2520alt%253D%2522portrait%2522%252F%253E%250A%253C%252Fdiv%253E"
-              class="code-iframe avatar-iframe"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre><code class="language-html">
+<div class="avatar avatar-sm">
+  <img src="shorturl.at/prDF3" 
+    class="avatar-img" alt="portrait"
+  />
+</div>
+<div class="avatar">
+  <img src="shorturl.at/evzP3" 
+    class="avatar-img" alt="portrait"
+  />
+</div>
+            </code></pre>
           </div>
         </article>
 
@@ -128,12 +136,17 @@
             </div>
           </div>
           <div class="docs-code-example">
-            <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=896&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-bg-s%2522%253E%250A%2509%253Cspan%2520class%253D%2522body-highlight%2522%253EAB%253C%252Fspan%253E%2509%2509%2509%2509%2509%2509%2509%2509%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-bg-p%2522%253E%250A%2509%253Cspan%2520class%253D%2522body-highlight%2522%253EAB%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-              class="code-iframe avatar-iframe"
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+            <pre><code class="html">
+<div class="avatar avatar-bg-s">
+  <span class="body-highlight">AB</span>
+</div>
+<div class="avatar avatar-md avatar-bg-p">
+  <span class="body-highlight">AB</span>
+</div>
+<div class="avatar avatar-lg avatar-bg-n">
+  <span class="body-highlight">AB</span>
+</div>
+            </code></pre>
           </div>
         </article>
       </section>
@@ -178,7 +191,29 @@
             </div>
           </div>
           <div class="docs-code-example">
-            <!-- Iframe will go here -->
+            <!-- code example -->
+            <pre><code class='html'>
+<div class="alert alert-primary" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+<div class="alert alert-neutral" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+<div class="alert alert-success" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+<div class="alert alert-danger" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+<div class="alert alert-warning" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+            </code></pre>
           </div>
         </article>
         <!-- Aler with icons Variants -->
@@ -235,7 +270,42 @@
             </div>
           </div>
           <div class="docs-code-example">
-            <!-- Iframe will go here -->
+            <pre><code class="html">
+<div class="alert alert-primary flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-info-circle alert-icon primary-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+
+<div class="alert alert-neutral flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-info-circle alert-icon neutral-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+
+<div class="alert alert-success flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-check-circle alert-icon success-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+
+<div class="alert alert-danger flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-error alert-icon danger-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+
+<div class="alert alert-warning flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-error alert-icon warning-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+            </code></pre>
           </div>
         </article>
         <!-- Alert with dismiss Variants -->
@@ -268,13 +338,23 @@
             </div>
           </div>
           <div class="docs-code-example">
-            <!-- Iframe will go here -->
+            <pre><code class="html">
+<div class="alert alert-primary flex-center-y alert-dismissible" role="alert">
+  <i class="bx bxs-info-circle alert-icon primary-icon"></i>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo incidunt praesentium earum,
+  aliquam illo, odit inventore, aspernatur enim quibusdam sit totam aliquid corporis recusandae
+  labore placeat atque beatae! Quidem, facere.
+  <button class="dismiss-btn">
+    <i class="bx bx-x dismiss-icon"></i>
+  </button>
+</div>
+            </code></pre>
           </div>
         </article>
       </section>
       <!-- Article Section -->
       <!-- Template -->
-      <section id="alerts">
+      <section id="component-name">
         <article class="docs-article">
           <h1 class="header-1">
             <!-- Component Name -->
@@ -289,7 +369,9 @@
           <!-- Example of component looks-->
           <!-- </div> -->
           <!-- <div class="docs-code-example"> -->
-          <!-- Iframe will go here -->
+          <!-- <pre><code class="html"> -->
+
+          <!-- </code></pre> -->
           <!-- </div> -->
         </article>
         <!-- Component Variants -->
@@ -310,12 +392,17 @@
           <!-- Examples of variant looks -->
           <!-- </div> -->
           <!-- <div class="docs-code-example"> -->
-          <!-- Iframe will go here -->
+          <!-- <pre><code class="html"> -->
+
+          <!-- </code></pre> -->
           <!-- </div> -->
         </article>
       </section>
       <!-- Template -->
     </main>
     <!-- Main Documentation -->
+    <!-- highlight.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
