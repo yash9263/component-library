@@ -10,6 +10,7 @@
   TODO: Add utilites eg: flex, margin, padding, text-align, link-styles
   @import 'utilites';
 */
+@import './helpers/utilties.css';
 /*
   Component styles
 */

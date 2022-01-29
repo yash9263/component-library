@@ -19,7 +19,7 @@
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .blur {
     background-color: revert;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(20px);
   }
 }
 .nav-logo {
