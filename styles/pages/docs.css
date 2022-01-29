@@ -54,3 +54,12 @@
 .avatar-iframe {
   height: 180px;
 }
+
+/*
+  alerts section
+*/
+.alerts-example {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
