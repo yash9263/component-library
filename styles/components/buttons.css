@@ -1,0 +1,306 @@
+.btn {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 150ms ease-in;
+  border: 0;
+  border-radius: var(--border-radius);
+  background-color: transparent;
+}
+.btn:hover {
+}
+.btn:active {
+}
+.btn:focus {
+  outline: 2px solid var(--color-neutral-200);
+  outline-offset: 2px;
+}
+.btn:disabled,
+button[disabled] {
+  opacity: 0.7;
+  pointer-events: none;
+}
+/*
+    primary btn 
+*/
+.btn-primary {
+  background: var(--color-primary-300);
+  color: var(--color-white);
+}
+/*
+    primary btn pseudo element
+    TODO: dynamically create pseudo classes for each button type
+*/
+.btn-primary:hover {
+  background: var(--color-primary-400);
+}
+.btn-primary:active {
+  background: var(--color-primary-500);
+}
+.btn-primary:focus,
+.btn-outline-primary:focus {
+  box-shadow: 0px 0px 0px 2px var(--color-primary-200);
+  outline: 2px solid var(--color-primary-200);
+  outline-offset: 2px;
+}
+/*
+    secondary buttons
+*/
+.btn-secondary {
+  background: var(--color-secondary-300);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  background: var(--color-secondary-400);
+}
+.btn-secondary:active {
+  background: var(--color-secondary-500);
+}
+.btn-secondary:focus,
+.btn-outline-secondary:focus {
+  box-shadow: 0px 0px 0px 2px var(--color-secondary-200);
+  outline: 2px solid var(--color-secondary-200);
+  outline-offset: 2px;
+}
+
+/*
+    success buttons
+*/
+.btn-success {
+  background: var(--color-success-300);
+  color: var(--color-white);
+}
+
+.btn-success:hover {
+  background: var(--color-success-400);
+}
+.btn-primary:active {
+  background: var(--color-success-500);
+}
+.btn-success:focus,
+.btn-outline-success:focus {
+  box-shadow: 0px 0px 0px 2px var(--color-success-200);
+  outline: 2px solid var(--color-success-200);
+  outline-offset: 2px;
+}
+
+/*
+    danger buttons
+*/
+.btn-danger {
+  background: var(--color-danger-300);
+  color: var(--color-white);
+}
+
+.btn-danger:hover {
+  background: var(--color-danger-400);
+}
+.btn-danger:active {
+  background: var(--color-danger-500);
+}
+.btn-danger:focus,
+.btn-outline-danger:focus {
+  box-shadow: 0px 0px 0px 2px var(--color-danger-200);
+  outline: 2px solid var(--color-danger-200);
+  outline-offset: 2px;
+}
+
+/*
+    warning buttons
+*/
+.btn-warning {
+  background: var(--color-warning-300);
+  color: var(--color-white);
+}
+
+.btn-warning:hover {
+  background: var(--color-warning-400);
+}
+.btn-warning:active {
+  background: var(--color-warning-500);
+}
+.btn-warning:focus,
+.btn-outline-warning:focus {
+  box-shadow: 0px 0px 0px 2px var(--color-warning-200);
+  outline: 2px solid var(--color-warning-200);
+  outline-offset: 2px;
+}
+
+/* Light button */
+
+.btn-light {
+  background-color: var(--color-neutral-100);
+}
+
+.btn-light:hover {
+  background: var(--color-neutral-200);
+}
+.btn-light:active {
+  background: var(--color-neutral-300);
+}
+.btn-light:focus {
+  box-shadow: 0px 0px 0px 2px var(--color-neutral-300);
+  outline: 2px solid var(--color-neutral-200);
+  outline-offset: 2px;
+}
+/* Dark button */
+.btn-dark {
+  background-color: var(--color-neutral-800);
+  color: var(--color-white);
+}
+.btn-dark:hover {
+  background: var(--color-neutral-900);
+}
+.btn-dark:active {
+  background: var(--color-neutral-900);
+}
+.btn-dark:focus {
+  box-shadow: 0px 0px 0px 2px var(--color-neutral-600);
+  outline: 2px solid var(--color-neutral-600);
+  outline-offset: 2px;
+}
+
+/* Primary outline button */
+.btn-outline-primary {
+  --parent-bg: var(--color-primary-400);
+  border: 1px solid var(--parent-bg);
+  color: var(--parent-bg);
+  transition: color 100ms ease-in, background-color 100ms ease-in;
+}
+.btn-outline-primary:hover {
+  background-color: var(--parent-bg);
+  color: var(--color-white);
+}
+
+/* Secondary outline button */
+.btn-outline-secondary {
+  --parent-bg: var(--color-secondary-400);
+  border: 1px solid var(--parent-bg);
+  color: var(--parent-bg);
+  transition: color 100ms ease-in, background-color 100ms ease-in;
+}
+.btn-outline-secondary:hover {
+  background-color: var(--parent-bg);
+  color: var(--color-white);
+}
+
+/* Success outline button */
+.btn-outline-success {
+  --parent-bg: var(--color-success-400);
+  border: 1px solid var(--parent-bg);
+  color: var(--parent-bg);
+  transition: color 100ms ease-in, background-color 100ms ease-in;
+}
+.btn-outline-success:hover {
+  background-color: var(--parent-bg);
+  color: var(--color-white);
+}
+
+/* Danger outline button */
+.btn-outline-danger {
+  --parent-bg: var(--color-danger-400);
+  border: 1px solid var(--parent-bg);
+  color: var(--parent-bg);
+  transition: color 100ms ease-in, background-color 100ms ease-in;
+}
+.btn-outline-danger:hover {
+  background-color: var(--parent-bg);
+  color: var(--color-white);
+}
+
+/* Warning outline button */
+.btn-outline-warning {
+  --parent-bg: var(--color-warning-400);
+  border: 1px solid var(--parent-bg);
+  color: var(--parent-bg);
+  transition: color 100ms ease-in, background-color 100ms ease-in;
+}
+.btn-outline-warning:hover {
+  background-color: var(--parent-bg);
+  color: var(--color-white);
+}
+/*  Outline button */
+.btn-outline {
+  --parent-bg: var(--color-neutral-900);
+  border: 1px solid var(--parent-bg);
+  color: var(--parent-bg);
+  transition: color 100ms ease-in, background-color 100ms ease-in;
+}
+.btn-outline:hover {
+  background-color: var(--parent-bg);
+  color: var(--color-white);
+}
+/* Button with links */
+.btn-link {
+  color: var(--color-neutral-900);
+  padding: 4px 8px;
+}
+.btn-link:hover {
+  background: var(--color-neutral-200);
+}
+.btn-link:focus {
+  outline: 2px solid var(--color-neutral-200);
+  outline-offset: 2px;
+}
+
+/* Button with icons */
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-icon i {
+  font-size: 1.25rem;
+}
+
+/* TODO: Animated btn or link */
+
+.btn-animated {
+  --parent-bg: var(--color-neutral-800);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--parent-bg);
+  color: var(--parent-bg);
+  transition: color 100ms ease-in;
+}
+.div-animate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--parent-bg);
+  transform: scale(0.7);
+  opacity: 0;
+  transition: transform 100ms ease-in, opacity 100ms ease-in, border-radius 100ms ease-in;
+}
+
+.btn-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-animated:hover .div-animate {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.btn-animated:hover {
+  color: var(--color-white);
+}
+
+.btn-circle {
+  --btn-border-radius: 500px;
+  border-radius: var(--btn-border-radius);
+  padding: 12px;
+}
+.btn-circle > .div-animate {
+  border-radius: var(--btn-border-radius);
+}
