@@ -27,7 +27,6 @@
   padding: 24px 16px;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  box-shadow: inset 0px 0px 8px 4px var(--box-shadow-color);
 }
 /*
   code highlight
@@ -74,4 +73,14 @@ code {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+/* 
+  button section
+*/
+.button-example {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }

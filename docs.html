@@ -17,7 +17,7 @@
   <body>
     <!-- Navbar -->
     <header class="navbar blur">
-      <div class="nav-logo">SI</div>
+      <div class="nav-logo header-1">SI</div>
       <nav>
         <ul class="nav-links">
           <li class="nav-link header-2">
@@ -40,9 +40,11 @@
       <nav class="aside-nav">
         <div class="aside-nav-title header-3">component list</div>
         <ul class="aside-nav-items">
-          <li class="aside-nav-item header-2 bg"><a href="#avatar">avatar</a></li>
+          <li class="aside-nav-item header-2 bg"><a href="#avatar">avatars</a></li>
 
-          <li class="aside-nav-item header-2"><a href="#alert">alert</a></li>
+          <li class="aside-nav-item header-2"><a href="#alerts">alerts</a></li>
+
+          <li class="aside-nav-item header-2"><a href="#buttons">buttons</a></li>
         </ul>
       </nav>
     </aside>
@@ -332,7 +334,7 @@
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo incidunt praesentium earum,
               aliquam illo, odit inventore, aspernatur enim quibusdam sit totam aliquid corporis recusandae
               labore placeat atque beatae! Quidem, facere.
-              <button class="dismiss-btn">
+              <button class="btn dismiss-btn">
                 <i class="bx bx-x dismiss-icon"></i>
               </button>
             </div>
@@ -352,8 +354,237 @@
           </div>
         </article>
       </section>
-      <!-- Article Section -->
+      <!-- Butons Section -->
+      <section id="buttons">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Buttons
+          </h1>
+          <p class="docs-text">
+            <!-- Component explanation text -->
+            Use our custom button styles for actions in forms, dialogs and more you want in your project
+            Buttons have lot of variants like <span class="p-color-text">btn-animate</span> for animated
+            buttons.
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            These are some predefined styles for your buttons each serving its own semantic purpose. You can
+            use them as you want or style them specific to the context it is being used.
+          </p>
+          <div class="docs-example button-example">
+            <!-- Example of component looks-->
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-light">Light</button>
+            <button class="btn btn-dark">Dark</button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-light">Light</button>
+<button class="btn btn-dark">Dark</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Outline Buttons
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            If you don't want colors on background then you can use
+            <span class="p-color-text">btn-outline-*</span> to have buttons with outlines only.
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-outline-primary">Primary</button>
+            <button class="btn btn-outline-secondary">Secondary</button>
+            <button class="btn btn-outline-success">Success</button>
+            <button class="btn btn-outline-danger">Danger</button>
+            <button class="btn btn-outline-warning">Warning</button>
+            <button class="btn btn-outline btn-icon">Button</button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-outline-primary">Primary</button>
+<button class="btn btn-outline-secondary">Secondary</button>
+<button class="btn btn-outline-success">Success</button>
+<button class="btn btn-outline-danger">Danger</button>
+<button class="btn btn-outline-warning">Warning</button>
+<button class="btn btn-outline btn-icon">Button</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Disabled button
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Buttons can be disabled by passing <span class="p-color-text">disabled</span> attribute to the
+            button tag.
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-secondary" disabled>Secondary</button>
+            <button class="btn btn-success" disabled>Success</button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-secondary" disabled>Secondary</button>
+<button class="btn btn-success" disabled>Success</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Link Button
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Link button can be used to create buttons which redirect users to a different page or a different
+            section on the same page.
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-link">link button</button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-link">link button</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Button with Icons
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            You can also add icons to the buttons to give more context to the user example for shopping cart
+            by adding <span class="p-color-text">btn-icon</span> class to the styles.
+          </p>
+          <p class="docs-text">
+            It can be used with both normal
+            <span class="p-color-text">btn-*(* = primary, secondary, etc)</span> and
+            <span class="p-color-text">btn-outline-*</span> as you like
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-outline-danger btn-icon">Delete<i class="bx bxs-trash-alt"></i></button>
+            <button class="btn btn-secondary btn-icon">Next<i class="bx bx-right-arrow-alt"></i></button>
+            <button class="btn btn-outline-primary btn-icon">Cart<i class="bx bxs-cart"></i></button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-outline-danger btn-icon">Delete
+  <i class="bx bxs-trash-alt"></i></button>
+<button class="btn btn-secondary btn-icon">Next
+  <i class="bx bx-right-arrow-alt"></i></button>
+<button class="btn btn-outline-primary btn-icon">Cart
+  <i class="bx bxs-cart"></i></button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Icon Button
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            You can have buttons only with icons and all the previous styles can be applied here to (<span
+              class="p-color-text"
+              >eg. btn-outline-*, btn-*(primary)</span
+            >).
+          </p>
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-danger btn-icon"><i class="bx bxs-trash-alt"></i></button>
+            <button class="btn btn-outline btn-icon"><i class="bx bxs-cart"></i></button>
+          </div>
+
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-danger btn-icon">
+  <i class="bx bxs-trash-alt"></i>
+</button>
+<button class="btn btn-outline btn-icon">
+  <i class="bx bxs-cart"></i>
+</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Animated Button
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            You can use animated buttons for cool effect on hover to your button.
+          </p>
+
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+            Note: <span class="p-color-text">btn-circle</span> should be in the very last to override other
+            btn styles
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-icon btn-animated">
+              <div class="div-animate"></div>
+              <span class="btn-text">Next<i class="bx bx-right-arrow-alt"></i> </span>
+            </button>
+
+            <button class="btn btn-icon btn-animated btn-circle">
+              <div class="div-animate"></div>
+              <span class="btn-text">
+                <i class="bx bx-link"></i>
+              </span>
+            </button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-icon btn-animated">
+  <div class="div-animate"></div>
+  <span class="btn-text">Next
+    <i class="bx bx-right-arrow-alt"></i></span>
+</button>
+
+<button class="btn btn-icon btn-animated btn-circle">
+  <div class="div-animate"></div>
+  <span class="btn-text">
+    <i class="bx bx-link"></i>
+  </span>
+</button>
+          </code></pre>
+          </div>
+        </article>
+      </section>
       <!-- Template -->
+      <!-- Component Section -->
       <section id="component-name">
         <article class="docs-article">
           <h1 class="header-1">
