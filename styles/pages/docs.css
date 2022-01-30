@@ -12,6 +12,11 @@
   max-width: calc(260px + 860px);
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .docs-main {
+    padding-left: revert;
+  }
+}
 .docs-section {
 }
 .docs-article {
@@ -59,6 +64,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 32px;
 }
 
@@ -83,4 +89,10 @@ code {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+}
+
+/* 
+  Card section
+ */
+.card-example {
 }

@@ -10,4 +10,16 @@
       hljs.highlightElement(el)
     })
   })
+  const mobileMenuEl = document.getElementById('mobile-menu-btn')
+  const sidebarBackdropEl = document.getElementById('sidebar-backdrop')
+  const sidebarEl = document.getElementById('sidebar')
+
+  mobileMenuEl.addEventListener('click', () => {
+    const sidebarClass = 'sidebar-open'
+    if (sidebarEl.classList.contains(sidebarClass)) {
+      sidebarEl.classList.remove(sidebarClass)
+    } else {
+      sidebarEl.classList.add(sidebarClass)
+    }
+  })
 }

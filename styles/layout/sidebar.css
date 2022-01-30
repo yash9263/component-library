@@ -1,4 +1,5 @@
 .sidebar {
+  background-color: var(--bg-color);
   position: fixed;
   width: 260px;
   height: 100%;
@@ -7,7 +8,23 @@
   padding-top: 64px;
 }
 
+/*
+  TODO: add sidebar backdrop for mobile
+.sidebar-backdrop {
+  display: none;
+} */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 200ms ease-in;
+    box-shadow: 0px 2px 8px 4px var(--box-shadow-color);
+  }
+}
+.sidebar-open {
+  transform: translateX(0%);
+}
 .aside-nav {
+  position: relative;
   height: 100%;
   border-right: 1px solid var(--border-color);
   padding: 24px;
