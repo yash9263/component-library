@@ -7,12 +7,7 @@
 @import './base/typography.css';
 
 /*
-  TODO: Add utilites eg: flex, margin, padding, text-align, link-styles
-  @import 'utilites';
-*/
-@import './helpers/utilties.css';
-/*
-  Component styles
+Component styles
 */
 @import './components/alerts.css';
 @import './components/avatar.css';
@@ -21,7 +16,7 @@
 @import './components/forms.css';
 
 /*
-  Layout styles
+Layout styles
 */
 @import './layout/header.css';
 @import './layout/sidebar.css';
@@ -29,7 +24,13 @@
 @import './layout/grid.css';
 
 /*
-  Page styles
+Page styles
 */
 @import './pages/home.css';
 @import './pages/docs.css';
+
+/*
+  TODO: Add utilites eg: flex, margin, padding, text-align, link-styles
+  @import 'utilites';
+*/
+@import './helpers/utilties.css';

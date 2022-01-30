@@ -31,8 +31,12 @@
         </ul>
       </nav>
       <div class="nav-items">
-        <ul class="nav-item">
-          <li>github</li>
+        <ul class="">
+          <li class="nav-item">
+            <a href="https://github.com/yash9263/component-library" target="blank"
+              >github<i class="bx bx-link-external"></i
+            ></a>
+          </li>
         </ul>
       </div>
     </header>
@@ -595,7 +599,7 @@
         TODO:  
         1. normal cards,  
         2. text only cards, 
-        3.vertical/horizontal cards,  
+        3. vertical/horizontal cards,  
         4. cards with dismiss 
         5. cards with badges 
         6. cards with shadow -->
@@ -614,6 +618,46 @@
           </p>
           <div class="docs-example card-example">
             <!-- Example of component looks-->
+            <div class="card">
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="card-footer-items">
+                  <button class="btn btn-link">Learn more</button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate d-bg"></div>
+                    <span class="btn-text">
+                      <i class="bx bxs-heart"></i>
+                    </span>
+                  </button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate s-bg"></div>
+                    <span class="btn-text">
+                      <i class="bx bxs-share-alt"></i>
+                    </span>
+                  </button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate"></div>
+                    <span class="btn-text">
+                      <i class="bx bx-dots-vertical-rounded"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- <div class="docs-code-example"> -->
           <!-- <pre><code class="html"> -->
@@ -625,6 +669,127 @@
         <article class="docs-article">
           <h2 class="header-2">
             <!-- Variant name -->
+            Card utility
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            You can use this utility to remove any of the four (<span class="p-color-text"
+              >.card-header, .card-media, .card-content, .card-footer</span
+            >
+            ) component of a card.
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            You can use the classname <span class="p-color-text">.hide-card-el</span> and it will remove the
+            element from the card.
+          </p>
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+            You can also use <span class="p-color-text">card-sm, card-lg</span> to get different sizes of
+            cards as shown below in the example.
+          </p>
+          <div class="docs-example card-example">
+            <!-- Card with no header and footer -->
+            <div class="card card-sm">
+              <div class="card-header hide-card-el">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header hide-card-el">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content hide-card-el">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="card-footer-items">
+                  <button class="btn btn-link">Learn more</button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate d-bg"></div>
+                    <span class="btn-text">
+                      <i class="bx bxs-heart"></i>
+                    </span>
+                  </button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate s-bg"></div>
+                    <span class="btn-text">
+                      <i class="bx bxs-share-alt"></i>
+                    </span>
+                  </button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate"></div>
+                    <span class="btn-text">
+                      <i class="bx bx-dots-vertical-rounded"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Examples of variant looks -->
+            <!-- <div class="docs-code-example"> -->
+            <!-- <pre><code class="html"> -->
+
+            <!-- </code></pre> -->
+            <!-- </div> -->
+          </div>
+          <div class="docs-example card-example">
+            <div class="card card-lg">
+              <div class="card-header hide-card-el">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/900/700" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="docs-code-example"> -->
+          <!-- <pre><code class="html"> -->
+
+          <!-- </code></pre> -->
+          <!-- </div> -->
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Text only Card
           </h2>
           <p class="docs-text">
             <!-- Variant explaination text -->
@@ -635,9 +800,226 @@
           <p class="docs-text">
             <!-- Example showing component variants usage. -->
           </p>
-          <!-- <div class="docs-example"> -->
-          <!-- Examples of variant looks -->
+          <div class="docs-example card-example">
+            <!-- Examples of variant looks -->
+            <div class="card">
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media hide-card-el"></div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="footer hide-card-el"></div>
+            </div>
+          </div>
+          <!-- <div class="docs-code-example"> -->
+          <!-- <pre><code class="html"> -->
+
+          <!-- </code></pre> -->
           <!-- </div> -->
+        </article>
+
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Horizontal Card
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+          </p>
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+          </p>
+          <div class="docs-example">
+            <!-- Examples of variant looks -->
+            <div class="card card-horizontal">
+              <div class="card-header hide-card-el">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media card-media-horizontal">
+                <div class="img-cont img-cont-horizontal">
+                  <img
+                    class="card-img card-img-horizontal"
+                    src="https://picsum.photos/700/600"
+                    alt="picsum"
+                  />
+                </div>
+              </div>
+              <div class="card-content">
+                <h1 class="header-2">Lorem Ipsum</h1>
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="docs-code-example"> -->
+          <!-- <pre><code class="html"> -->
+
+          <!-- </code></pre> -->
+          <!-- </div> -->
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Card with badge
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+          </p>
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+          </p>
+          <div class="docs-example card-example">
+            <!-- Examples of variant looks -->
+            <div class="card">
+              <div class="card-badge success-bg">40% discount</div>
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+            <div class="card card-sm">
+              <div class="card-badge d-bg">2</div>
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="docs-code-example"> -->
+          <!-- <pre><code class="html"> -->
+
+          <!-- </code></pre> -->
+          <!-- </div> -->
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Card with dismiss
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+          </p>
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+          </p>
+          <div class="docs-example card-example">
+            <div class="card">
+              <button class="btn btn-outline-danger btn-icon card-dismiss btn-no-border">
+                <i class="bx bx-x"></i>
+              </button>
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+            <!-- Examples of variant looks -->
+          </div>
+          <!-- <div class="docs-code-example"> -->
+          <!-- <pre><code class="html"> -->
+
+          <!-- </code></pre> -->
+          <!-- </div> -->
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Card with shadow
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+          </p>
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+          </p>
+          <div class="docs-example card-example">
+            <!-- Examples of variant looks -->
+            <div class="card card-shadow">
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+          </div>
           <!-- <div class="docs-code-example"> -->
           <!-- <pre><code class="html"> -->
 

@@ -1,3 +1,127 @@
 .card {
+  --padding-x: 16px;
+  --padding-y: 12px;
+  position: relative;
   border-radius: var(--border-radius);
+  max-width: calc((345 / 16) * 1rem);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+/* Card Elements */
+.card-header {
+  padding: var(--padding-y) var(--padding-x);
+}
+/* Card media and its children */
+.card-media {
+}
+
+.img-cont {
+  max-height: calc((184 / 16) * 1rem);
+  overflow: hidden;
+}
+
+.card-img {
+  object-fit: cover;
+}
+
+.card-content {
+  padding: var(--padding-y) var(--padding-x);
+}
+
+/* Card footer items styles */
+.card-footer {
+  padding: var(--padding-y) var(--padding-x);
+}
+
+.card-footer-items {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Card Utilities 
+*/
+/* Hide card element */
+.hide-card-el {
+  display: none;
+}
+
+/* Card Sizes */
+.card-sm {
+  max-width: calc((240 / 16) * 1rem);
+}
+.card-lg {
+  max-width: 100%;
+}
+
+/* Horizontal card */
+.card-horizontal {
+  display: flex;
+  max-width: calc((460 / 16) * 1rem);
+}
+
+.card-media-horizontal {
+  display: flex;
+}
+
+.img-cont-horizontal {
+  max-height: revert;
+}
+
+.card-img-horizontal {
+  object-fit: cover;
+  flex-shrink: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* Card with badge */
+.card-badge {
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  display: inline-block;
+  background: var(--color-neutral-800);
+  color: var(--color-white);
+  font-size: 0.85rem;
+  padding: 0 16px;
+  padding-left: 8px;
+  margin-right: -8px;
+  border-radius: var(--border-radius);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: transform 100ms ease-in;
+}
+.card:hover .card-badge {
+  transform: translateX(-4px) scale(1.1);
+}
+
+/* Card with dismiss */
+.card-dismiss {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  padding: 8px;
+}
+
+/* Card with shadow */
+.card-shadow {
+  box-shadow: 3px 6px 8px 4px var(--box-shadow-color);
+  transition: box-shadow 100ms ease-in, transform 100ms ease-in;
+}
+.card:hover.card-shadow {
+  transform: translateY(-2px);
+  box-shadow: 4px 8px 12px 8px var(--box-shadow-color);
+}
+
+/* Move these classes to utilites */
+.s-bg {
+  background: var(--color-secondary-400);
+}
+.d-bg {
+  background: var(--color-danger-400);
+}
+.success-bg {
+  background: var(--color-success-400);
 }
