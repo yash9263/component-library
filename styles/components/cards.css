@@ -6,6 +6,7 @@
   max-width: calc((345 / 16) * 1rem);
   border: 1px solid var(--border-color);
   overflow: hidden;
+  background-color: var(--color-white);
 }
 
 /* Card Elements */
@@ -116,6 +117,9 @@
 }
 
 /* Move these classes to utilites */
+.p-bg {
+  background: var(--color-primary-400);
+}
 .s-bg {
   background: var(--color-secondary-400);
 }
