@@ -61,6 +61,8 @@
           <li class="aside-nav-item header-2"><a href="#buttons">buttons</a></li>
 
           <li class="aside-nav-item header-2"><a href="#cards">cards</a></li>
+
+          <li class="aside-nav-item header-2"><a href="#images">images</a></li>
         </ul>
       </nav>
     </aside>
@@ -169,12 +171,6 @@
         </article>
       </section>
       <hr />
-      <!-- Avatar Section -->
-      <!-- Article Section
-        TODO: normal alerts 
-              alerts with icons
-              alerts with close button
-      -->
       <section id="alerts">
         <article class="docs-article">
           <h1 class="header-1">
@@ -603,15 +599,6 @@
         </article>
       </section>
       <hr />
-      <!-- 
-        TODO:  
-        1. normal cards,  
-        2. text only cards, 
-        3. vertical/horizontal cards,  
-        4. cards with dismiss 
-        5. cards with badges 
-        6. cards with shadow -->
-      <!-- Cards Section -->
       <section id="cards">
         <article class="docs-article">
           <h1 class="header-1">
@@ -879,7 +866,7 @@
   </div>
   <div class="card-media">
     <div class="img-cont">
-      <img class="card-img" src="https://picsum.photos/900/700" alt="picsum" />
+      <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
     </div>
   </div>
   <div class="card-content">
@@ -961,7 +948,7 @@
                 <div class="img-cont img-cont-horizontal">
                   <img
                     class="card-img card-img-horizontal"
-                    src="https://picsum.photos/700/600"
+                    src="https://picsum.photos/400/300"
                     alt="picsum"
                   />
                 </div>
@@ -985,7 +972,7 @@
     <div class="img-cont img-cont-horizontal">
       <img
         class="card-img card-img-horizontal"
-        src="https://picsum.photos/700/600"
+        src="https://picsum.photos/400/300"
         alt="picsum"
       />
     </div>
@@ -1199,6 +1186,99 @@
 </div>
           </code></pre>
           </div>
+        </article>
+      </section>
+      <!-- Template -->
+      <!-- Image Section -->
+      <section id="images">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Images
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Images are a very crucial part of any UI. So you can use our image classes to give different
+            styles to your images. Images have have variants like responsive-image to have a responsive-image
+            which changes its size according to its viewport.
+          </p>
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Responsive Image
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            The below example will have an image with an aspect ratio of 16:9 and will respond to changes to
+            viewport width.
+          </p>
+          <div class="docs-example">
+            <!-- Example of component looks-->
+
+            <div class="img-container">
+              <img src="https://picsum.photos/1280/720" alt="cover-image" />
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="img-container">
+  <img src="https://picsum.photos/1280/720" alt="cover-image" />
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Round Images
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Round Images will provide images inside an circle container to use across the ui. It should be used with <span class="p-color-text">img-container img-circle</span>. It has two variants <span class="p-color-text">img-circle and img-circle-sm</span>
+          </p>
+         
+          <div class="docs-example img-example">
+            <!-- Examples of variant looks -->
+            <div class="img-container img-circle">
+              <img src="https://picsum.photos/300/300" alt="cover-image" />
+            </div>
+            <div class="img-container img-circle img-circle-sm">
+              <img src="https://picsum.photos/300/300" alt="cover-image" />
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="img-container img-circle">
+  <img src="https://picsum.photos/300/300" alt="cover-image" />
+</div>
+<div class="img-container img-circle img-circle-sm">
+  <img src="https://picsum.photos/300/300" alt="cover-image" />
+</div>
+          </code></pre>
+          <!-- </div> -->
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Square Images
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Square Images will provide images inside an square container to use across the ui. It should be used with <span class="p-color-text">img-container img-square</span>.
+          </p>
+          <div class="docs-example img-example">
+            <!-- Examples of variant looks -->
+            <div class="img-container img-square">
+              <img src="https://picsum.photos/300/300" alt="cover-image" />
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="img-container img-square">
+  <img src="https://picsum.photos/300/300" alt="cover-image" />
+</div>
+          </code></pre>
+          <!-- </div> -->
         </article>
       </section>
       <!-- Template -->
