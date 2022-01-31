@@ -253,7 +253,7 @@ button[disabled] {
   gap: 8px;
 }
 .btn-icon i {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 /* TODO: Animated btn or link */
@@ -299,8 +299,12 @@ button[disabled] {
 .btn-circle {
   --btn-border-radius: 500px;
   border-radius: var(--btn-border-radius);
-  padding: 12px;
+  padding: 8px;
 }
 .btn-circle > .div-animate {
   border-radius: var(--btn-border-radius);
+}
+
+.btn-no-border {
+  border: 0;
 }
