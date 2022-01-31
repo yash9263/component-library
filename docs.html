@@ -63,12 +63,14 @@
           <li class="aside-nav-item header-2"><a href="#cards">cards</a></li>
 
           <li class="aside-nav-item header-2"><a href="#images">images</a></li>
+          
+          <li class="aside-nav-item header-2"><a href="#inputs">inputs</a></li>
         </ul>
       </nav>
     </aside>
     <!-- Sidebar -->
     <!-- Main Documentation -->
-    <main class="docs-main">
+    <main class="docs-main" id="documentation">
       <!-- Avatar Section -->
       <section class="docs-section" id="avatar">
         <!-- Avatar with images -->
@@ -1281,6 +1283,113 @@
           <!-- </div> -->
         </article>
       </section>
+      <!-- Inputs Section -->
+      <section id="inputs">
+        <article class="docs-article">
+          <h1 class="header-1">
+            Form controls
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Add styles to form controls like <span class="p-color-text">inputs and textarea</span> to reflect different states and give them a new look. 
+          </p>
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Inputs
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            Inputs are an important part of any form. You can use different styles provided by the library to give your form inputs styles to reflect there focus states.
+          </p>
+          <div class="docs-example input-example">
+          <!-- Example of component looks-->
+            <div class="form-input-cont">
+              <label for="inputExample1" class="form-label">Name</label>
+              <input class="form-input" name='name' type='text' placeholder="name" id="inputExample1"/>
+            </div>
+            <div class="form-input-cont">
+              <label for="inputExample2" class="form-label">Tell us your story</label>
+              <textarea class="form-input" name='text' placeholder="Enter text here..." rows="4" id="inputExample2"></textarea>
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="form-input-cont">
+  <label for="inputExample1" class="form-label">Name</label>
+  <input class="form-input" name='name' type='text' placeholder="name" id="inputExample1"/>
+</div>
+<div class="form-input-cont">
+  <label for="inputExample2" class="form-label">Tell us your story</label>
+  <textarea class="form-input" name='text' placeholder="Enter text here..." rows="4" id="inputExample2"></textarea>
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Inputs with error
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            On form submit if there is an error inputs should provide valuable messages about errors that are returned by the server or by the browsers default behaviours. Examples below shows classes you can use to style those errors message.
+          </p>
+          <div class="docs-example input-example">
+          <!-- Examples of variant looks -->
+            <div class="form-input-cont">
+              <label for="inputExampleError1" class="form-label">Label</label>
+              <input class="form-input form-input-error" name='email' type='email' placeholder="abc@email.com" id="inputExampleError1"/>
+              <span class="input-error-desc"><p class="small-text">error description</p></span>
+            </div>
+            <div class="form-input-cont">
+              <label for="inputExampleError2" class="form-label">Tell us your story</label>
+              <textarea class="form-input form-input-error" name='text' placeholder="Enter text here..." rows="4" id="inputExampleError2"></textarea>
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="form-input-cont">
+  <label for="inputExampleError1" class="form-label">Label</label>
+  <input class="form-input form-input-error" name='email' type='email' placeholder="abc@email.com" id="inputExampleError1"/>
+  <span class="input-error-desc"><p class="small-text">error description</p></span>
+</div>
+<div class="form-input-cont">
+  <label for="inputExampleError2" class="form-label">Tell us your story</label>
+  <textarea class="form-input form-input-error" name='text' placeholder="Enter text here..." rows="4" id="inputExampleError2"></textarea>
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Inputs with icon
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            You can also add icons to your form inputs to make them more accessible or visually pleasing. Below example shows how to add and style a icon inside a form-input.
+          </p>
+          
+          <div class="docs-example input-example">
+          <!-- Examples of variant looks -->
+            <div class="form-input-cont">
+              <label for="inputExampleIcon" class="form-label">Label</label>
+              <div class="icon-input-wrapper"><span class="input-icon"><i class='bx bxl-gmail'></i></span>
+              <input class="form-input form-input-icon" name='email' type='email' placeholder="abc@email.com" id="inputExampleIcon"/></div>
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="form-input-cont">
+  <label for="inputExampleIcon" class="form-label">Label</label>
+  <div class="icon-input-wrapper"><span class="input-icon"><i class='bx bxl-gmail'></i></span>
+  <input class="form-input form-input-icon" name='email' type='email' placeholder="abc@email.com" id="inputExampleIcon"/></div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+      </section>
       <!-- Template -->
       <!-- Component Section -->
       <section id="component-name">
@@ -1330,6 +1439,14 @@
       <!-- Template -->
     </main>
     <!-- Main Documentation -->
+    <button class="btn btn-icon btn-animated btn-circle to-top">
+      <div class="div-animate"></div>
+      <a href="#documentation">
+      <span class="btn-text">
+        <i class='bx bx-up-arrow-alt' ></i>
+      </span>
+    </a>
+    </button>
     <!-- highlight.js cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script src="./index.js"></script>
