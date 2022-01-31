@@ -15,7 +15,8 @@
 /* Todo navbar responsive */
 @media screen and (max-width: 48rem) {
   .navbar {
-    /* overflow-x: auto; */
+    padding: 0 1rem;
+    gap: 8px;
   }
 }
 .blur {
@@ -37,11 +38,15 @@
 @media screen and (max-width: 48rem) {
   .menu-btn {
     display: block;
-    padding: 8px;
+    transform: translateY(4px);
+    padding: 4px;
   }
-  .menu-btn:focus,
+  .menu-btn:focus {
+    outline: none;
+  }
   .menu-btn:active {
     background-color: var(--color-neutral-200);
+    outline: none;
   }
   .menu-btn i {
     font-size: 2rem;
@@ -63,7 +68,11 @@
 .nav-link {
   margin-left: 16px;
 }
-
+@media screen and (max-width: 48rem) {
+  .nav-links {
+    display: none;
+  }
+}
 .nav-items {
   display: flex;
   align-items: center;
@@ -71,3 +80,12 @@
   flex: 1;
   justify-content: flex-end;
 }
+/* for tablet
+ @media screen and (max-width: 48rem) {
+  
+} 
+  for mobile
+  @media screen and (max-width: 26.563rem) {
+  
+} 
+*/
