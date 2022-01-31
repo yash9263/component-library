@@ -101,3 +101,18 @@ code {
   justify-content: center;
   gap: 24px;
 }
+@media screen and (max-width: 48rem) {
+  .card-example {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Image Section */
+.img-example {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
