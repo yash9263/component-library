@@ -9,7 +9,6 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
-
 @supports not (aspect-ratio: 16/9) {
   .img-container {
     position: relative;

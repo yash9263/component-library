@@ -17,6 +17,17 @@
     padding-left: revert;
   }
 }
+.to-top {
+  position: fixed;
+  bottom: 4%;
+  right: 4%;
+  z-index: 99;
+  background-color: var(--color-white);
+  transition: transform 200ms ease-in;
+}
+.to-top:hover {
+  transform: translateY(-4px);
+}
 .docs-section {
 }
 .docs-article {
@@ -114,5 +125,13 @@ code {
   gap: 24px;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Input section */
+.input-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
