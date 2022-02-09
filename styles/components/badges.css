@@ -1,0 +1,31 @@
+.badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--color-neutral-100);
+  background-color: var(--color-danger-400);
+}
+
+.i-badge {
+  display: block;
+  text-align: center;
+  min-width: 28px;
+
+  font-size: 0.65rem;
+  top: -12px;
+  right: -12px;
+  padding: 0px 4px;
+  border-radius: 50px;
+  border: 1px solid var(--color-neutral-100);
+  background-color: var(--color-danger-400);
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+}
+
+.badge-icon {
+  font-size: 2rem;
+}

@@ -6,3 +6,25 @@
   display: flex;
   align-items: center;
 }
+
+/* position */
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.fit {
+  width: fit-content;
+}
+
+/* Backgrounds */
+
+.p-bg {
+  background: var(--color-primary-400);
+}
+.s-bg {
+  background: var(--color-success-400);
+}
