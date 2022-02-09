@@ -55,8 +55,10 @@
         <div class="aside-nav-title header-2">Components list</div>
         <ul class="aside-nav-items">
           <li class="aside-nav-item header-2 bg"><a href="#avatar">avatars</a></li>
-
+          
           <li class="aside-nav-item header-2"><a href="#alerts">alerts</a></li>
+          
+          <li class="aside-nav-item header-2 bg"><a href="#badges">badges</a></li>
 
           <li class="aside-nav-item header-2"><a href="#buttons">buttons</a></li>
 
@@ -369,8 +371,131 @@
           </div>
         </article>
       </section>
-
       <hr />
+      <!-- Badge Section -->
+      <section id="badges">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Badge
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Badges can be used to display notifications or to get the attention of the user. 
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            Below are some of the custom badge examples for showing over avatars.
+          </p>
+          <div class="docs-example avatar-example">
+          <!-- Example of component looks-->
+          <div class="pos-rel fit">
+            <span class="badge"></span>
+            <div class="avatar avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+           </div>
+          <div class="pos-rel fit">
+            <span class="badge s-bg"></span>
+            <div class="avatar avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1633990212781-ab04323f58f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+           </div>
+          <div class="pos-rel fit">
+            <span class="badge p-bg"></span>
+            <div class="avatar avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1602077422495-c8733eb58c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+           </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="pos-rel fit">
+  <span class="badge"></span>
+  <div class="avatar avatar-md">
+    <img
+      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      class="avatar-img"
+      alt="portrait"
+    />
+  </div>
+  </div>
+<div class="pos-rel fit">
+  <span class="badge s-bg"></span>
+  <div class="avatar avatar-md">
+    <img
+      src="https://images.unsplash.com/photo-1633990212781-ab04323f58f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+      class="avatar-img"
+      alt="portrait"
+    />
+  </div>
+  </div>
+<div class="pos-rel fit">
+  <span class="badge p-bg"></span>
+  <div class="avatar avatar-md">
+    <img
+      src="https://images.unsplash.com/photo-1602077422495-c8733eb58c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+      class="avatar-img"
+      alt="portrait"
+    />
+  </div>
+  </div>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Badge on Icons 
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Badges are often used to show no. of notifications in any ui or to show no. of items in your cart on an ecommerce app.
+          </p>
+         
+          <div class="docs-example avatar-example">
+          <!-- Examples of variant looks -->
+          <div class="pos-rel fit">
+            <span class="pos-abs i-badge">10+</span>
+            <i class='bx bxs-bell badge-icon'></i>
+          </div>
+          <div class="pos-rel fit">
+            <span class="pos-abs i-badge s-bg">1</span>
+            <i class='bx bxs-cart badge-icon'></i>
+          </div>
+          <button class="btn btn-primary pos-rel"><span class="pos-abs i-badge">2</span>Primary</button>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+  <div class="pos-rel fit">
+    <span class="pos-abs i-badge">10+</span>
+    <i class='bx bxs-bell badge-icon'></i>
+  </div>
+  <div class="pos-rel fit">
+    <span class="pos-abs i-badge s-bg">1</span>
+    <i class='bx bxs-cart badge-icon'></i>
+  </div>
+  <button class="btn btn-primary pos-rel">
+    <span class="pos-abs i-badge">2</span>
+    Primary
+  </button>
+          </code></pre>
+          </div>
+        </article>
+      </section>
       <!-- Butons Section -->
       <section id="buttons">
         <article class="docs-article">
