@@ -16,6 +16,24 @@
   line-height: 1.25rem;
 }
 
+.header-4 {
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.25rem;
+}
+
+.header-5 {
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+
+.header-6 {
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
 .body {
   font-weight: 400;
   font-size: 1rem;
@@ -51,4 +69,8 @@
   font-size: 0.8rem;
   line-height: 1rem;
   text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
 }

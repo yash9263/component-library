@@ -135,3 +135,11 @@ code {
   align-items: center;
   justify-content: center;
 }
+
+/* Utils Section */
+.utils-exmaple {
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
