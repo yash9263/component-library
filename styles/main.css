@@ -17,6 +17,7 @@ Component styles
 @import './components/forms.css';
 @import './components/images.css';
 @import './components/inputs.css';
+@import './components/navbar.css';
 
 /*
 Layout styles

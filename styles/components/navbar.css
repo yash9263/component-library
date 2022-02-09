@@ -1,0 +1,31 @@
+.ex-nav {
+  display: flex;
+  padding: 24px 32px;
+  background: var(--color-white);
+}
+
+.ex-nav-logo {
+  margin-right: auto;
+  cursor: pointer;
+}
+.ex-nav-items {
+  display: flex;
+  gap: 24px;
+}
+.ex-nav-item {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 26.56rem) {
+  .ex-nav {
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    padding: 16px;
+  }
+
+  .ex-nav-item {
+    margin-left: unset;
+  }
+}
