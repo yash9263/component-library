@@ -137,9 +137,20 @@ code {
 }
 
 /* Utils Section */
-.utils-exmaple {
+.utils-example {
   background: var(--color-white);
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
+/* Lists Section */
+
+.list-example {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+/* Modal section */

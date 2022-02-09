@@ -18,6 +18,9 @@ Component styles
 @import './components/images.css';
 @import './components/inputs.css';
 @import './components/navbar.css';
+@import './components/lists.css';
+@import './components/modal.css';
+@import './components/toast.css';
 
 /*
 Layout styles
