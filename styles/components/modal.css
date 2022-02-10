@@ -1,0 +1,10 @@
+.modal-overlay {
+  min-height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsla(240, 18%, 35%, 0.7);
+}
+.modal-content {
+  max-width: 92%;
+}
