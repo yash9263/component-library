@@ -43,7 +43,7 @@
   padding: 24px 16px;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  background: var(--color-neutral-100);
+  background: var(--color-primary-50);
 }
 /*
   code highlight

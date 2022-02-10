@@ -1,41 +1,42 @@
 :root {
   /* colors */
-  --color-primary-500: #1a8a99;
-  --color-primary-400: #25c5da;
-  --color-primary-300: #66d6e5;
-  --color-primary-200: #a8e8f0;
-  --color-primary-100: #e9f9fb;
-  --color-secondary-500: #09537c;
-  --color-secondary-400: #0c77b0;
-  --color-secondary-300: #2dacf0;
-  --color-secondary-200: #87d0f7;
-  --color-secondary-100: #e1f3fd;
-  --color-success-500: #235a33;
-  --color-success-400: #328148;
-  --color-success-300: #58be75;
-  --color-success-200: #a0dab0;
-  --color-success-100: #e7f6eb;
-  --color-danger-500: #911f17;
-  --color-danger-400: #cf2c20;
-  --color-danger-300: #e5655b;
-  --color-danger-200: #f0a7a1;
-  --color-danger-100: #fbe9e8;
-  --color-warning-500: #9d5b1d;
-  --color-warning-400: #d98230;
-  --color-warning-300: #e4a76e;
-  --color-warning-200: #f0cdac;
-  --color-warning-100: #fbf2ea;
-  --color-neutral-900: #222235;
-  --color-neutral-800: #32324d;
-  --color-neutral-700: #494969;
-  --color-neutral-600: #656586;
-  --color-neutral-500: #8e8ea9;
-  --color-neutral-400: #a6a6ba;
-  --color-neutral-300: #bfbfcf;
-  --color-neutral-200: #dcdce4;
-  --color-neutral-150: #ebebf0;
-  --color-neutral-100: #f6f6f9;
-  --color-white: #fff;
+  --color-primary-500: hsl(245, 58%, 51%);
+  --color-primary-400: hsl(243, 75%, 59%);
+  --color-primary-300: hsl(234, 89%, 74%);
+  --color-primary-200: hsl(228, 96%, 89%);
+  --color-primary-100: hsl(226, 100%, 94%);
+  --color-primary-50: hsl(226, 100%, 97%);
+  --color-secondary-500: hsl(201, 86%, 26%);
+  --color-secondary-400: hsl(201, 87%, 37%);
+  --color-secondary-300: hsl(201, 87%, 56%);
+  --color-secondary-200: hsl(201, 88%, 75%);
+  --color-secondary-100: hsl(201, 88%, 94%);
+  --color-success-500: hsl(137, 44%, 25%);
+  --color-success-400: hsl(137, 44%, 35%);
+  --color-success-300: hsl(137, 44%, 55%);
+  --color-success-200: hsl(137, 44%, 74%);
+  --color-success-100: hsl(136, 45%, 94%);
+  --color-danger-500: hsl(4, 73%, 33%);
+  --color-danger-400: hsl(4, 73%, 47%);
+  --color-danger-300: hsl(4, 73%, 63%);
+  --color-danger-200: hsl(5, 72%, 79%);
+  --color-danger-100: rgb(251, 234, 233);
+  --color-warning-500: hsl(29, 69%, 36%);
+  --color-warning-400: hsl(29, 69%, 52%);
+  --color-warning-300: hsl(29, 69%, 66%);
+  --color-warning-200: hsl(29, 69%, 81%);
+  --color-warning-100: hsl(28, 68%, 95%);
+  --color-neutral-900: hsl(240, 22%, 17%);
+  --color-neutral-800: hsl(240, 21%, 25%);
+  --color-neutral-700: hsl(240, 18%, 35%);
+  --color-neutral-600: hsl(240, 14%, 46%);
+  --color-neutral-500: rgb(142, 142, 169);
+  --color-neutral-400: hsl(240, 13%, 69%);
+  --color-neutral-300: hsl(240, 14%, 78%);
+  --color-neutral-200: hsl(240, 13%, 88%);
+  --color-neutral-150: hsl(240, 14%, 93%);
+  --color-neutral-100: hsl(240, 20%, 97%);
+  --color-white: hsl(0, 0%, 100%);
   --bg-color: var(--color-white);
   --text-color: var(--color-neutral-900);
 
@@ -49,12 +50,15 @@
   --font-weight-regular: 400;
   --border-radius: 4px;
   --border-color: var(--color-neutral-200);
-  --box-shadow-color: hsla(240, 13%, 88%, 0.4);
-
-  /*
-    TODO:
-      add outline ring color
-      add box-shadows variables
-      add border-color
-      */
+  --box-shadow-color: hsla(226, 100%, 94%, 0.4);
 }
+
+/* 
+  Primary color consideration
+
+    --color-primary-500: hsl(250, 54%, 48%);
+    --color-primary-400: hsl(250, 80%, 60%);
+    --color-primary-300: hsl(250, 79%, 68%);
+    --color-primary-200: hsl(250, 80%, 84%);
+    --color-primary-100: hsl(251, 80%, 92%); 
+  */
