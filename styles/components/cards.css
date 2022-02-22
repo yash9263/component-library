@@ -1,3 +1,39 @@
+/* Ecom cart */
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+.product-card .product-img-wrapper img {
+  aspect-ratio: 8/10;
+}
+.wishlist-icon {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  font-size: 2rem;
+  color: var(--color-neutral-300);
+}
+.medium {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.btn.cart-btn {
+  margin-top: auto;
+}
+.card-content .product-caption {
+  margin-top: 8px;
+}
+
 .card {
   --padding-x: 16px;
   --padding-y: 12px;
