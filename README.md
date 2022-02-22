@@ -16,7 +16,7 @@ To use the all the classes available in the library paste the below in code snip
 
 ## Component Documentation and Example
 
-For usage of the component and examples [visit here.](https://develop--sicomponentlibrary.netlify.app/docs)
+For usage of the component and examples [visit here.](https://develop--sicomponentlibrary.netlify.app/)
 
 ## List of all Components
 
