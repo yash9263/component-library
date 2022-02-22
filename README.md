@@ -1,7 +1,5 @@
 ## Component Library
 
-<hr/>
-
 ## Installation
 
 To use the all the classes available in the library paste the below in code snippet in your `<head></head>` before your custom styles.
@@ -33,6 +31,9 @@ For usage of the component and examples [visit here.](https://develop--sicompone
     <li>navbar</li>
     <li>lists</li>
     <li>modals</li>
+    <li>rating</li>
+    <li>toast</li>
+    <li>grid</li>
     <!-- Todo add p1 components here before submission -->
 </ul>
 
@@ -43,7 +44,7 @@ Utility classes for color, backgrounds and flex comming soon.
 
 ```
 header-1, header-2, header-3, header-4, header-5, header-6, body, button-text, small-text, small-button-text, text-center,
-medium, bold, regular
+medium, bold, regular, flex-center, flex-center-x, flex-center-y, etc.
 ```
 
 Currently available utility classes more to come.

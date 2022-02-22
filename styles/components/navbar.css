@@ -10,7 +10,8 @@
 }
 .ex-nav-items {
   display: flex;
-  gap: 24px;
+  gap: 12px 24px;
+  flex-wrap: wrap;
 }
 .ex-nav-item {
   margin-left: 16px;

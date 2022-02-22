@@ -1,0 +1,14 @@
+.si-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.filler {
+  height: 48px;
+  background: var(--color-primary-300);
+  border-radius: var(--border-radius);
+}
+
+.si-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}

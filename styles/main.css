@@ -21,6 +21,8 @@ Component styles
 @import './components/lists.css';
 @import './components/modal.css';
 @import './components/toast.css';
+@import './components/rating.css';
+@import './components/grid.css';
 
 /*
 Layout styles
