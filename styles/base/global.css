@@ -6,9 +6,9 @@
 
 html,
 body {
-  height: 100%;
+  height: unset;
   font-family: var(--font-family);
-  background-color: var(--bg-color);
+  background-color: var(--color-primary-100);
   color: var(--text-color);
   font-weight: var(--font-weight-regular);
   font-size: 1rem;
@@ -23,4 +23,18 @@ hr {
   text-align: center;
   color: var(--color-neutral-150);
   background: var(--color-neutral-150);
+}
+
+pre code::-webkit-scrollbar {
+  height: 6px;
+}
+
+pre code::-webkit-scrollbar-track {
+  background: var(--color-primary-300);
+}
+
+pre code::-webkit-scrollbar-thumb {
+  width: 2px;
+  background-color: var(--color-primary-400);
+  border-radius: 100px;
 }
