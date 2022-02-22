@@ -33,3 +33,16 @@
 .color-gray {
   color: var(--color-neutral-600);
 }
+.color-p {
+  color: var(--color-primary-500);
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+.medium {
+  font-weight: var(--font-weight-semi-bold);
+}
+.regular {
+  font-weight: var(--font-weight-regular);
+}

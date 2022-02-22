@@ -29,6 +29,7 @@ Layout styles
 @import './layout/sidebar.css';
 @import './layout/footer.css';
 @import './layout/grid.css';
+@import './layout/hero.css';
 
 /*
 Page styles

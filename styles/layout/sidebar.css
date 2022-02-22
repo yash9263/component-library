@@ -1,23 +1,32 @@
 .sidebar {
   background-color: var(--bg-color);
-  position: fixed;
-  width: 260px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding-top: 64px;
-  box-shadow: 0px 2px 8px 4px var(--box-shadow-color);
+  position: sticky;
+  max-height: calc(100vh - 96px);
+  overflow: auto;
+  top: 80px;
   z-index: 9;
+  grid-column: 1 / 2;
+  border-radius: var(--border-radius);
+  align-self: flex-start;
 }
 
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-200);
+  border-radius: 100px;
+}
 /*
   TODO: add sidebar backdrop for mobile
-.sidebar-backdrop {
-  display: none;
-} */
+*/
 @media screen and (max-width: 48rem) {
   .sidebar {
-    transform: translateX(-100%);
+    position: fixed;
+    top: 64px;
+    max-height: calc(100vh - 64px);
+    transform: translateX(-150%);
     transition: transform 200ms ease-in;
   }
 }
@@ -27,29 +36,25 @@
 .aside-nav {
   position: relative;
   height: 100%;
-  border-right: 1px solid var(--border-color);
   padding: 24px;
-  overflow: auto;
 }
+
 .aside-mobile-nav {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
 }
 .aside-nav-link {
+  margin-bottom: 16px;
 }
-@media screen and (max-width: 48rem) {
-  .aside-mobile-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 16px;
-    margin-bottom: 16px;
-    border-bottom: 1px solid var(--border-color);
-  }
-  .aside-nav-link > a {
-    display: block;
-    padding: 8px 0px;
-  }
+.aside-nav-link > a {
+  display: block;
+  padding: 8px 0px;
 }
+
 .aside-nav-title {
   padding-bottom: 16px;
 }

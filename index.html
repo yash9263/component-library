@@ -4,28 +4,1838 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Component Library</title>
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <title>Documentation</title>
+    <!-- Code Highlight (highlight.js cdn) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css"
+    />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <header class="navbar blur">
-      <div class="nav-logo">SI</div>
-      <nav>
-        <ul class="nav-links">
-          <li class="nav-link header-2">
-            <a href="./index.html">getting started</a>
-          </li>
-          <li class="nav-link header-2">
-            <a href="./docs.html">components</a>
+      <button id="mobile-menu-btn" class="btn btn-icon menu-btn"><i class="bx bx-menu"></i></button>
+      <div class="nav-logo header-1"><a href="/">SI</a></SI></div>
+      <nav class="nav-items">
+        <ul class="">
+          <li class="nav-item">
+            <a href="https://github.com/yash9263/component-library" target="blank"
+              >github<i class="bx bx-link-external"></i
+            ></a>
           </li>
         </ul>
       </nav>
-      <div class="nav-items">
-        <ul class="nav-item">
-          <li>github</li>
-        </ul>
-      </div>
     </header>
-    <div class="header-2">coming soon...</div>
+    <!-- Navbar -->
+    <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="header-1 hero-header">The <span class="">UI library</span> to suit all your needs</h1>
+          <p class="body">
+            We provide all the important components that you will need to start your next project. 
+          </p>
+        
+          <div class="hero-btn-wrapper">
+            <a class="btn btn-primary btn-icon" href="#documentation">
+              Get started
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
+            <div class="docs-code-example">
+              <pre><code ><link
+                rel="stylesheet"
+                href="https://develop--sicomponentlibrary.netlify.app/styles/main.css"
+              /></code></pre>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Main Documentation -->
+    <main class="main-wrapper" id="documentation">
+      <!-- Sidebar -->
+      <aside id="sidebar" class="sidebar">
+        <nav class="aside-nav">
+          <ul class="">
+            <li class="aside-nav-link header-2">
+              <a href="#">Getting started</a>
+            </li>
+            <li class="aside-nav-link header-2">
+              <a href="#documentation">Components</a>
+            </li>
+          </ul>
+          
+          <ul class="aside-nav-items">
+            <li class="aside-nav-item header-2 bg"><a href="#avatar">avatars</a></li>
+            
+            <li class="aside-nav-item header-2"><a href="#alerts">alerts</a></li>
+            
+            <li class="aside-nav-item header-2 bg"><a href="#badges">badges</a></li>
+
+            <li class="aside-nav-item header-2"><a href="#buttons">buttons</a></li>
+
+            <li class="aside-nav-item header-2"><a href="#cards">cards</a></li>
+
+            <li class="aside-nav-item header-2"><a href="#images">images</a></li>
+            
+            <li class="aside-nav-item header-2"><a href="#inputs">inputs</a></li>
+            
+            <li class="aside-nav-item header-2"><a href="#utilites">utilites</a></li>
+
+            <li class="aside-nav-item header-2"><a href="#navbar">navbar</a></li>
+            
+            <li class="aside-nav-item header-2"><a href="#lists">lists</a></li>
+            
+            <li class="aside-nav-item header-2"><a href="#modals">modals</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Sidebar -->
+      <div class="docs-main" id="">
+      <!-- Avatar Section -->
+      <section id="avatar">
+        <!-- Avatar with images -->
+        <article class="docs-article">
+          <h1 class="header-1">Avatars</h1>
+          <p class="docs-text">
+            Avatars provides elements which are circular in shape and can be used for profile links,
+            dashboards, and anywhere across the website.
+          </p>
+          <p class="docs-text">
+            For styling you can use the class <span class="p-color-text">avatar</span> and can add
+            <span class="p-color-text">avatar-sm, avatar-md and avatar-lg</span> to change avatar's size.
+          </p>
+
+          <div class="docs-example avatar-example">
+            <div class="avatar avatar-sm">
+              <img
+                src="https://images.unsplash.com/photo-1602077422495-c8733eb58c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+            <div class="avatar">
+              <img
+                src="https://images.unsplash.com/photo-1618151313441-bc79b11e5090?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+            <div class="avatar avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+            <div class="avatar avatar-lg">
+              <img
+                src="https://images.unsplash.com/photo-1633990212781-ab04323f58f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+          </div>
+
+          <div class="docs-code-example">
+            <pre><code class="language-html">
+<div class="avatar avatar-sm">
+  <img src="shorturl.at/prDF3" 
+    class="avatar-img" alt="portrait"
+  />
+</div>
+<div class="avatar">
+  <img src="shorturl.at/evzP3" 
+    class="avatar-img" alt="portrait"
+  />
+</div>
+            </code></pre>
+          </div>
+        </article>
+
+        <!-- Avatar without images -->
+        <article class="docs-article">
+          <h2 class="header-2">Avatar with letters</h2>
+          <p class="docs-text">
+            Letters Avatars provides text to be inserted inside of Avatar elements instead of images. If an
+            avatar doesn't have a image text can be used as a placeholder for the images.
+          </p>
+          <p class="docs-text">
+            For styling avatars with text you can use the same classes as the
+            <span class="p-color-text">avatar</span> and
+            <span class="p-color-text">avatar-bg-s, avatar-bg-p and avatar-bg-n</span> for giving different
+            backgrounds.
+          </p>
+
+          <div class="docs-example avatar-example">
+            <div class="avatar avatar-bg-s">
+              <span class="body-highlight">AB</span>
+            </div>
+            <div class="avatar avatar-md avatar-bg-p">
+              <span class="body-highlight">AB</span>
+            </div>
+            <div class="avatar avatar-lg avatar-bg-n">
+              <span class="body-highlight">AB</span>
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="avatar avatar-bg-s">
+  <span class="body-highlight">AB</span>
+</div>
+<div class="avatar avatar-md avatar-bg-p">
+  <span class="body-highlight">AB</span>
+</div>
+<div class="avatar avatar-lg avatar-bg-n">
+  <span class="body-highlight">AB</span>
+</div>
+            </code></pre>
+          </div>
+        </article>
+      </section>
+      <!-- <hr /> -->
+      <section id="alerts">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Alerts
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Alerts components are available to show alerts for user actions.
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            For proper styling users can use base <span class="p-color-text">alert</span> class and then add
+            any of the contextual classes (eg.,
+            <span class="p-color-text">alert-primary, alert-sucess, etc</span>).
+          </p>
+          <div class="docs-example alerts-example">
+            <!-- Example of component looks-->
+            <div class="alert alert-primary" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
+            <div class="alert alert-neutral" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
+            <div class="alert alert-success" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
+            <div class="alert alert-danger" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
+            <div class="alert alert-warning" role="alert">
+              <span class="bold-text">Information alert: </span>A simple alert box check it out
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <!-- code example -->
+            <pre><code class='html'>
+<div class="alert alert-primary" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+<div class="alert alert-neutral" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+<div class="alert alert-success" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+<div class="alert alert-danger" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+<div class="alert alert-warning" role="alert">
+  <span class="bold-text">Information alert: </span>
+  A simple alert box check it out
+</div>
+            </code></pre>
+          </div>
+        </article>
+        <!-- Aler with icons Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Alert with Icons
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            You can also use alerts with icons. Here, in the below example alerts are used with icons and
+            <span class="p-color-text">flex-center-y</span> flex utility and using classes
+            <span class="p-color-text">alert-icon</span> and contextual classes
+            <span class="p-color-text">alert-success</span> to style icons.
+          </p>
+          <div class="docs-example alerts-example">
+            <!-- Examples of variant looks -->
+            <div class="alert alert-primary flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-info-circle alert-icon primary-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+
+            <div class="alert alert-neutral flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-info-circle alert-icon neutral-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+
+            <div class="alert alert-success flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-check-circle alert-icon success-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+
+            <div class="alert alert-danger flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-error alert-icon danger-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+
+            <div class="alert alert-warning flex-center-y" role="alert">
+              <span>
+                <i class="bx bxs-error alert-icon warning-icon"></i>
+              </span>
+              A simple alert box check it out
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="alert alert-primary flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-info-circle alert-icon primary-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+
+<div class="alert alert-neutral flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-info-circle alert-icon neutral-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+
+<div class="alert alert-success flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-check-circle alert-icon success-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+
+<div class="alert alert-danger flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-error alert-icon danger-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+
+<div class="alert alert-warning flex-center-y" role="alert">
+  <span>
+    <i class="bx bxs-error alert-icon warning-icon"></i>
+  </span>
+  A simple alert box check it out
+</div>
+            </code></pre>
+          </div>
+        </article>
+        <!-- Alert with dismiss Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Alert with dismiss name -->
+            Alerts with dismiss
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Alerts with dismiss gives a button for users to remove the element from the DOM. You can pass your
+            own onClick handler to the <span class="p-color-text">dismiss button</span>.
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            For proper styling class <span class="p-color-text">alert-dismissible</span> can be added to the
+            alert element. For styling class <span class="p-color-text">dismiss-btn</span> can be added to
+            dismiss button.
+          </p>
+          <div class="docs-example alerts-example">
+            <!-- Examples of variant looks -->
+            <div class="alert alert-primary flex-center-y alert-dismissible" role="alert">
+              <i class="bx bxs-info-circle alert-icon primary-icon"></i>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo incidunt praesentium earum,
+              aliquam illo, odit inventore, aspernatur enim quibusdam sit totam aliquid corporis recusandae
+              labore placeat atque beatae! Quidem, facere.
+              <button class="btn dismiss-btn">
+                <i class="bx bx-x dismiss-icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="alert alert-primary flex-center-y alert-dismissible" role="alert">
+  <i class="bx bxs-info-circle alert-icon primary-icon"></i>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo incidunt praesentium earum,
+  aliquam illo, odit inventore, aspernatur enim quibusdam sit totam aliquid corporis recusandae
+  labore placeat atque beatae! Quidem, facere.
+  <button class="dismiss-btn">
+    <i class="bx bx-x dismiss-icon"></i>
+  </button>
+</div>
+            </code></pre>
+          </div>
+        </article>
+      </section>
+      <!-- <hr /> -->
+      <!-- Badge Section -->
+      <section id="badges">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Badge
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Badges can be used to display notifications or to get the attention of the user. 
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            Below are some of the custom badge examples for showing over avatars.
+          </p>
+          <div class="docs-example avatar-example">
+          <!-- Example of component looks-->
+          <div class="pos-rel fit">
+            <span class="badge"></span>
+            <div class="avatar avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+           </div>
+          <div class="pos-rel fit">
+            <span class="badge s-bg"></span>
+            <div class="avatar avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1633990212781-ab04323f58f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+           </div>
+          <div class="pos-rel fit">
+            <span class="badge p-bg"></span>
+            <div class="avatar avatar-md">
+              <img
+                src="https://images.unsplash.com/photo-1602077422495-c8733eb58c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                class="avatar-img"
+                alt="portrait"
+              />
+            </div>
+           </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="pos-rel fit">
+  <span class="badge"></span>
+  <div class="avatar avatar-md">
+    <img
+      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      class="avatar-img"
+      alt="portrait"
+    />
+  </div>
+  </div>
+<div class="pos-rel fit">
+  <span class="badge s-bg"></span>
+  <div class="avatar avatar-md">
+    <img
+      src="https://images.unsplash.com/photo-1633990212781-ab04323f58f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+      class="avatar-img"
+      alt="portrait"
+    />
+  </div>
+  </div>
+<div class="pos-rel fit">
+  <span class="badge p-bg"></span>
+  <div class="avatar avatar-md">
+    <img
+      src="https://images.unsplash.com/photo-1602077422495-c8733eb58c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+      class="avatar-img"
+      alt="portrait"
+    />
+  </div>
+  </div>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Badge on Icons 
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Badges are often used to show no. of notifications in any ui or to show no. of items in your cart on an ecommerce app.
+          </p>
+         
+          <div class="docs-example avatar-example">
+          <!-- Examples of variant looks -->
+          <div class="pos-rel fit">
+            <span class="pos-abs i-badge">10+</span>
+            <i class='bx bxs-bell badge-icon'></i>
+          </div>
+          <div class="pos-rel fit">
+            <span class="pos-abs i-badge s-bg">1</span>
+            <i class='bx bxs-cart badge-icon'></i>
+          </div>
+          <button class="btn btn-primary pos-rel"><span class="pos-abs i-badge">2</span>Primary</button>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+  <div class="pos-rel fit">
+    <span class="pos-abs i-badge">10+</span>
+    <i class='bx bxs-bell badge-icon'></i>
+  </div>
+  <div class="pos-rel fit">
+    <span class="pos-abs i-badge s-bg">1</span>
+    <i class='bx bxs-cart badge-icon'></i>
+  </div>
+  <button class="btn btn-primary pos-rel">
+    <span class="pos-abs i-badge">2</span>
+    Primary
+  </button>
+          </code></pre>
+          </div>
+        </article>
+      </section>
+      <!-- Butons Section -->
+      <section id="buttons">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Buttons
+          </h1>
+          <p class="docs-text">
+            <!-- Component explanation text -->
+            Use our custom button styles for actions in forms, dialogs and more you want in your project
+            Buttons have lot of variants like <span class="p-color-text">btn-animate</span> for animated
+            buttons.
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            These are some predefined styles for your buttons each serving its own semantic purpose. You can
+            use them as you want or style them specific to the context it is being used.
+          </p>
+          <div class="docs-example button-example">
+            <!-- Example of component looks-->
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-light">Light</button>
+            <button class="btn btn-dark">Dark</button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-light">Light</button>
+<button class="btn btn-dark">Dark</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Outline Buttons
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            If you don't want colors on background then you can use
+            <span class="p-color-text">btn-outline-*</span> to have buttons with outlines only.
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-outline-primary">Primary</button>
+            <button class="btn btn-outline-secondary">Secondary</button>
+            <button class="btn btn-outline-success">Success</button>
+            <button class="btn btn-outline-danger">Danger</button>
+            <button class="btn btn-outline-warning">Warning</button>
+            <button class="btn btn-outline btn-icon">Button</button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-outline-primary">Primary</button>
+<button class="btn btn-outline-secondary">Secondary</button>
+<button class="btn btn-outline-success">Success</button>
+<button class="btn btn-outline-danger">Danger</button>
+<button class="btn btn-outline-warning">Warning</button>
+<button class="btn btn-outline btn-icon">Button</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Disabled button
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Buttons can be disabled by passing <span class="p-color-text">disabled</span> attribute to the
+            button tag.
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-secondary" disabled>Secondary</button>
+            <button class="btn btn-success" disabled>Success</button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-secondary" disabled>Secondary</button>
+<button class="btn btn-success" disabled>Success</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Link Button
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Link button can be used to create buttons which redirect users to a different page or a different
+            section on the same page.
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-link">link button</button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-link">link button</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Button with Icons
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            You can also add icons to the buttons to give more context to the user example for shopping cart
+            by adding <span class="p-color-text">btn-icon</span> class to the styles.
+          </p>
+          <p class="docs-text">
+            It can be used with both normal
+            <span class="p-color-text">btn-*(* = primary, secondary, etc)</span> and
+            <span class="p-color-text">btn-outline-*</span> as you like
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-outline-danger btn-icon">Delete<i class="bx bxs-trash-alt"></i></button>
+            <button class="btn btn-secondary btn-icon">Next<i class="bx bx-right-arrow-alt"></i></button>
+            <button class="btn btn-outline-primary btn-icon">Cart<i class="bx bxs-cart"></i></button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-outline-danger btn-icon">Delete
+  <i class="bx bxs-trash-alt"></i></button>
+<button class="btn btn-secondary btn-icon">Next
+  <i class="bx bx-right-arrow-alt"></i></button>
+<button class="btn btn-outline-primary btn-icon">Cart
+  <i class="bx bxs-cart"></i></button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Icon Button
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            You can have buttons only with icons and all the previous styles can be applied here to (<span
+              class="p-color-text"
+              >eg. btn-outline-*, btn-*(primary)</span
+            >).
+          </p>
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-danger btn-icon"><i class="bx bxs-trash-alt"></i></button>
+            <button class="btn btn-outline btn-icon"><i class="bx bxs-cart"></i></button>
+          </div>
+
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-danger btn-icon">
+  <i class="bx bxs-trash-alt"></i>
+</button>
+<button class="btn btn-outline btn-icon">
+  <i class="bx bxs-cart"></i>
+</button>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Animated Button
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            You can use animated buttons for cool effect on hover to your button.
+          </p>
+
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+            Note: <span class="p-color-text">btn-circle</span> should be in the very last to override other
+            btn styles
+          </p>
+          <div class="docs-example button-example">
+            <!-- Examples of variant looks -->
+            <button class="btn btn-icon btn-animated">
+              <div class="div-animate"></div>
+              <span class="btn-text">Next<i class="bx bx-right-arrow-alt"></i> </span>
+            </button>
+
+            <button class="btn btn-icon btn-animated btn-circle">
+              <div class="div-animate"></div>
+              <span class="btn-text">
+                <i class="bx bx-link"></i>
+              </span>
+            </button>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<button class="btn btn-icon btn-animated">
+  <div class="div-animate"></div>
+  <span class="btn-text">Next
+    <i class="bx bx-right-arrow-alt"></i></span>
+</button>
+
+<button class="btn btn-icon btn-animated btn-circle">
+  <div class="div-animate"></div>
+  <span class="btn-text">
+    <i class="bx bx-link"></i>
+  </span>
+</button>
+          </code></pre>
+          </div>
+        </article>
+      </section>
+      <!-- <hr /> -->
+      <section id="cards">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Cards
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Cards are important part of any ui they can be used to display text, on an ecommerce cards are
+            used to showcase products in product card and many more uses. Below are some of the variants that
+            can be created using the <span class="p-color-text">.card</span> styles and card utilites provided
+            by this library.
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            The card component has 4 main parts
+            <span class="p-color-text">card-header, card-media, card-content, card-footer</span>. Below is an
+            basic example of a card component.
+          </p>
+          <div class="docs-example card-example">
+            <!-- Example of component looks-->
+            <div class="card">
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="card-footer-items">
+                  <button class="btn btn-link">Learn more</button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate d-bg"></div>
+                    <span class="btn-text">
+                      <i class="bx bxs-heart"></i>
+                    </span>
+                  </button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate s-bg"></div>
+                    <span class="btn-text">
+                      <i class="bx bxs-share-alt"></i>
+                    </span>
+                  </button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate"></div>
+                    <span class="btn-text">
+                      <i class="bx bx-dots-vertical-rounded"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="card">
+  <div class="card-header">
+    <p class="header-2">Lorem Ipsum</p>
+    <p class="small-text">30 January 2022</p>
+  </div>
+  <div class="card-media">
+    <div class="img-cont">
+      <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+    </div>
+  </div>
+  <div class="card-content">
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+  <div class="card-footer">
+    <div class="card-footer-items">
+      <button class="btn btn-link">Learn more</button>
+      <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+        <div class="div-animate d-bg"></div>
+        <span class="btn-text"><i class="bx bxs-heart"></i></span>
+      </button>
+      <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+        <div class="div-animate s-bg"></div><span class="btn-text"><i class="bx bxs-share-alt"></i></span>
+      </button>
+      <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+        <div class="div-animate"></div><span class="btn-text"><i class="bx bx-dots-vertical-rounded"></i></span>
+      </button>
+    </div>
+  </div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Card utilities
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            You can use this utility to remove any of the four (<span class="p-color-text"
+              >.card-header, .card-media, .card-content, .card-footer</span
+            >
+            ) component of a card.
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            You can use the classname <span class="p-color-text">.hide-card-el</span> and it will remove the
+            element from the card.
+          </p>
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+            You can also use <span class="p-color-text">card-sm, card-lg</span> to get different sizes of
+            cards as shown below in the example.
+          </p>
+          <div class="docs-example card-example">
+            <!-- Card with no header and footer -->
+            <div class="card card-sm">
+              <div class="card-header hide-card-el">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header hide-card-el">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content hide-card-el">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="card-footer-items">
+                  <button class="btn btn-link">Learn more</button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate d-bg"></div>
+                    <span class="btn-text">
+                      <i class="bx bxs-heart"></i>
+                    </span>
+                  </button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate s-bg"></div>
+                    <span class="btn-text">
+                      <i class="bx bxs-share-alt"></i>
+                    </span>
+                  </button>
+                  <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+                    <div class="div-animate"></div>
+                    <span class="btn-text">
+                      <i class="bx bx-dots-vertical-rounded"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Examples of variant looks -->
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="card card-sm">
+  <div class="card-header hide-card-el">
+    <p class="header-2">Lorem Ipsum</p>
+    <p class="small-text">30 January 2022</p>
+  </div>
+  <div class="card-media">
+    <div class="img-cont">
+      <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+    </div>
+  </div>
+  <div class="card-content">
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+  <div class="card-footer hide-card-el">
+    <div class="card-footer-items"></div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header hide-card-el">
+    <p class="header-2">Lorem Ipsum</p>
+    <p class="small-text">30 January 2022</p>
+  </div>
+  <div class="card-media">
+    <div class="img-cont">
+      <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+    </div>
+  </div>
+  <div class="card-content hide-card-el">
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+  <div class="card-footer">
+    <div class="card-footer-items">
+      <button class="btn btn-link">Learn more</button>
+      <button class="btn btn-icon btn-animated btn-circle btn-no-border">
+        <div class="div-animate d-bg"></div>
+        <span class="btn-text"><i class="bx bxs-heart"></i></span>
+      </button>
+    </div>
+  </div>
+</div>
+            </code></pre>
+          </div>
+          <div class="docs-example card-example">
+            <div class="card card-lg">
+              <div class="card-header hide-card-el">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/1980/1020" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="card card-lg">
+  <div class="card-header hide-card-el">
+    <p class="header-2">Lorem Ipsum</p>
+    <p class="small-text">30 January 2022</p>
+  </div>
+  <div class="card-media">
+    <div class="img-cont">
+      <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+    </div>
+  </div>
+  <div class="card-content">
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+  <div class="card-footer hide-card-el">
+    <div class="card-footer-items"></div>
+  </div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Text only Card
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            You can create cards with only text and a heading by using
+            <span class="p-color-text">card-header, and card-content</span>.
+          </p>
+          <div class="docs-example card-example">
+            <!-- Examples of variant looks -->
+            <div class="card">
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="card">
+  <div class="card-header">
+    <p class="header-2">Lorem Ipsum</p>
+    <p class="small-text">30 January 2022</p>
+  </div>
+  <div class="card-content">
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Horizontal Card
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Horizontal cards allows the card to arrange its items side by side. To create a card horizontal
+            you can add <span class="p-color-text">card-horizontal</span>
+            classname to the card element.
+          </p>
+          <div class="docs-example">
+            <!-- Examples of variant looks -->
+            <div class="card card-horizontal">
+              <div class="card-header hide-card-el">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media card-media-horizontal">
+                <div class="img-cont img-cont-horizontal">
+                  <img
+                    class="card-img card-img-horizontal"
+                    src="https://picsum.photos/400/300"
+                    alt="picsum"
+                  />
+                </div>
+              </div>
+              <div class="card-content">
+                <h1 class="header-2">Lorem Ipsum</h1>
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+              <div class="card-footer hide-card-el">
+                <div class="card-footer-items"></div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="card card-horizontal">
+  <div class="card-media card-media-horizontal">
+    <div class="img-cont img-cont-horizontal">
+      <img
+        class="card-img card-img-horizontal"
+        src="https://picsum.photos/400/300"
+        alt="picsum"
+      />
+    </div>
+  </div>
+  <div class="card-content">
+    <h1 class="header-2">Lorem Ipsum</h1>
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Card with badge
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            To show discounts on a product card or notifications on a card, card badges can be used.
+          </p>
+          <div class="docs-example card-example">
+            <!-- Examples of variant looks -->
+            <div class="card">
+              <div class="card-badge success-bg">40% discount</div>
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+            </div>
+            <div class="card card-sm">
+              <div class="card-badge d-bg">2</div>
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="card">
+  <div class="card-badge success-bg">40% discount</div>
+  <div class="card-header">
+    <p class="header-2">Lorem Ipsum</p>
+    <p class="small-text">30 January 2022</p>
+  </div>
+  <div class="card-media">
+    <div class="img-cont">
+      <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+    </div>
+  </div>
+  <div class="card-content">
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+</div>
+<div class="card card-sm">
+  <div class="card-badge d-bg">2</div>
+  <div class="card-header">
+    <p class="header-2">Lorem Ipsum</p>
+    <p class="small-text">30 January 2022</p>
+  </div>
+  <div class="card-media">
+    <div class="img-cont">
+      <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+    </div>
+  </div>
+  <div class="card-content">
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Card with dismiss
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Card with dismiss can be used to remove a card element from DOM. You can write your javascript
+            implementation of dismiss and attach it to the dismiss button to trigger on click.
+          </p>
+          <div class="docs-example card-example">
+            <div class="card">
+              <button class="btn btn-outline-danger btn-icon card-dismiss btn-no-border">
+                <i class="bx bx-x"></i>
+              </button>
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+            </div>
+            <!-- Examples of variant looks -->
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="card">
+  <button class="btn btn-outline-danger btn-icon card-dismiss btn-no-border">
+    <i class="bx bx-x"></i>
+  </button>
+  <div class="card-header">
+    <p class="header-2">Lorem Ipsum</p>
+    <p class="small-text">30 January 2022</p>
+  </div>
+  <div class="card-media">
+    <div class="img-cont">
+      <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+    </div>
+  </div>
+  <div class="card-content">
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Card with shadow
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Shadows can be added to card to give an illusion of card floating to the user. By adding
+            <span class="p-color-text">card-shadow</span> class to the card element.
+          </p>
+          <div class="docs-example card-example">
+            <!-- Examples of variant looks -->
+            <div class="card card-shadow">
+              <div class="card-header">
+                <p class="header-2">Lorem Ipsum</p>
+                <p class="small-text">30 January 2022</p>
+              </div>
+              <div class="card-media">
+                <div class="img-cont">
+                  <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                  tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="card card-shadow">
+  <div class="card-header">
+    <p class="header-2">Lorem Ipsum</p>
+    <p class="small-text">30 January 2022</p>
+  </div>
+  <div class="card-media">
+    <div class="img-cont">
+      <img class="card-img" src="https://picsum.photos/400/300" alt="picsum" />
+    </div>
+  </div>
+  <div class="card-content">
+    <p class="body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+      tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+    </p>
+  </div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+      </section>
+      <!-- <hr/> -->
+      <!-- Template -->
+      <!-- Image Section -->
+      <section id="images">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Images
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Images are a very crucial part of any UI. So you can use our image classes to give different
+            styles to your images. Images have have variants like responsive-image to have a responsive-image
+            which changes its size according to its viewport.
+          </p>
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Responsive Image
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            The below example will have an image with an aspect ratio of 16:9 and will respond to changes to
+            viewport width.
+          </p>
+          <div class="docs-example">
+            <!-- Example of component looks-->
+
+            <div class="img-container">
+              <img src="https://picsum.photos/1280/720" alt="cover-image" />
+            </div>
+          </div>
+          <div class="docs-code-example">
+            <pre><code class="html">
+<div class="img-container">
+  <img src="https://picsum.photos/1280/720" alt="cover-image" />
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Round Images
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Round Images will provide images inside an circle container to use across the ui. It should be used with <span class="p-color-text">img-container img-circle</span>. It has two variants <span class="p-color-text">img-circle and img-circle-sm</span>
+          </p>
+         
+          <div class="docs-example img-example">
+            <!-- Examples of variant looks -->
+            <div class="img-container img-circle">
+              <img src="https://picsum.photos/300/300" alt="cover-image" />
+            </div>
+            <div class="img-container img-circle img-circle-sm">
+              <img src="https://picsum.photos/300/300" alt="cover-image" />
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="img-container img-circle">
+  <img src="https://picsum.photos/300/300" alt="cover-image" />
+</div>
+<div class="img-container img-circle img-circle-sm">
+  <img src="https://picsum.photos/300/300" alt="cover-image" />
+</div>
+          </code></pre>
+          <!-- </div> -->
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Square Images
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            Square Images will provide images inside an square container to use across the ui. It should be used with <span class="p-color-text">img-container img-square</span>.
+          </p>
+          <div class="docs-example img-example">
+            <!-- Examples of variant looks -->
+            <div class="img-container img-square">
+              <img src="https://picsum.photos/300/300" alt="cover-image" />
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="img-container img-square">
+  <img src="https://picsum.photos/300/300" alt="cover-image" />
+</div>
+          </code></pre>
+          <!-- </div> -->
+        </article>
+      </section>
+      <!-- <hr/> -->
+      <!-- Inputs Section -->
+      <section id="inputs">
+        <article class="docs-article">
+          <h1 class="header-1">
+            Form controls
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Add styles to form controls like <span class="p-color-text">inputs and textarea</span> to reflect different states and give them a new look. 
+          </p>
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Inputs
+          </h2>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            Inputs are an important part of any form. You can use different styles provided by the library to give your form inputs styles to reflect there focus states.
+          </p>
+          <div class="docs-example input-example">
+          <!-- Example of component looks-->
+            <div class="form-input-cont">
+              <label for="inputExample1" class="form-label">Name</label>
+              <input class="form-input" name='name' type='text' placeholder="name" id="inputExample1"/>
+            </div>
+            <div class="form-input-cont">
+              <label for="inputExample2" class="form-label">Tell us your story</label>
+              <textarea class="form-input" name='text' placeholder="Enter text here..." rows="4" id="inputExample2"></textarea>
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="form-input-cont">
+  <label for="inputExample1" class="form-label">Name</label>
+  <input class="form-input" name='name' type='text' placeholder="name" id="inputExample1"/>
+</div>
+<div class="form-input-cont">
+  <label for="inputExample2" class="form-label">Tell us your story</label>
+  <textarea class="form-input" name='text' placeholder="Enter text here..." rows="4" id="inputExample2"></textarea>
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Inputs with error
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            On form submit if there is an error inputs should provide valuable messages about errors that are returned by the server or by the browsers default behaviours. Examples below shows classes you can use to style those errors message.
+          </p>
+          <div class="docs-example input-example">
+          <!-- Examples of variant looks -->
+            <div class="form-input-cont">
+              <label for="inputExampleError1" class="form-label">Label</label>
+              <input class="form-input form-input-error" name='email' type='email' placeholder="abc@email.com" id="inputExampleError1"/>
+              <span class="input-error-desc"><p class="small-text">error description</p></span>
+            </div>
+            <div class="form-input-cont">
+              <label for="inputExampleError2" class="form-label">Tell us your story</label>
+              <textarea class="form-input form-input-error" name='text' placeholder="Enter text here..." rows="4" id="inputExampleError2"></textarea>
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="form-input-cont">
+  <label for="inputExampleError1" class="form-label">Label</label>
+  <input class="form-input form-input-error" name='email' type='email' placeholder="abc@email.com" id="inputExampleError1"/>
+  <span class="input-error-desc"><p class="small-text">error description</p></span>
+</div>
+<div class="form-input-cont">
+  <label for="inputExampleError2" class="form-label">Tell us your story</label>
+  <textarea class="form-input form-input-error" name='text' placeholder="Enter text here..." rows="4" id="inputExampleError2"></textarea>
+</div>
+          </code></pre>
+          </div>
+        </article>
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+            Inputs with icon
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+            You can also add icons to your form inputs to make them more accessible or visually pleasing. Below example shows how to add and style a icon inside a form-input.
+          </p>
+          
+          <div class="docs-example input-example">
+          <!-- Examples of variant looks -->
+            <div class="form-input-cont">
+              <label for="inputExampleIcon" class="form-label">Label</label>
+              <div class="icon-input-wrapper"><span class="input-icon"><i class='bx bxl-gmail'></i></span>
+              <input class="form-input form-input-icon" name='email' type='email' placeholder="abc@email.com" id="inputExampleIcon"/></div>
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="form-input-cont">
+  <label for="inputExampleIcon" class="form-label">Label</label>
+  <div class="icon-input-wrapper"><span class="input-icon"><i class='bx bxl-gmail'></i></span>
+  <input class="form-input form-input-icon" name='email' type='email' placeholder="abc@email.com" id="inputExampleIcon"/></div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+      </section>
+      <!-- <hr/> -->
+      <!-- Utilites Section -->
+      <section id="utilites">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Utilites
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            You can also use different typography classes to style your text as your need. These are all the typography classes that are available.
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+            <span class="p-color-text">header-1, header-2, header-3, header-4, header-5, header-6, body, button-text, small-text, small-button-text, text-center</span>
+          </p>
+          <div class="docs-example utils-example">
+          <!-- Example of component looks-->
+          <h1 class="header-1">Lorem ipsum dolor sit  </h1>
+          <h2 class="header-2">Lorem ipsum, dolor sit </h2>
+          <h3 class="header-3">Lorem ipsum, dolor sit  </h3>
+          <h4 class="header-4">Lorem ipsum, dolor sit  </h4>
+          <h5 class="header-5">Lorem ipsum, dolor sit  </h5>
+          <h6 class="header-6">Lorem ipsum, dolor sit  </h6>
+          <p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum veniam, earum minima eveniet error excepturi reiciendis. </p>
+          <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum veniam, earum minima eveniet error excepturi reiciendis. </p>
+          <p class="body color-gray text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum veniam, earum minima eveniet error excepturi reiciendis. </p>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<h1 class="header-1">Lorem ipsum dolor sit  </h1>
+<h2 class="header-2">Lorem ipsum, dolor sit </h2>
+<h3 class="header-3">Lorem ipsum, dolor sit  </h3>
+<h4 class="header-4">Lorem ipsum, dolor sit  </h4>
+<h5 class="header-5">Lorem ipsum, dolor sit  </h5>
+<h6 class="header-6">Lorem ipsum, dolor sit  </h6>
+<p class="body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum veniam, earum minima eveniet error excepturi reiciendis. </p>
+<p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum veniam, earum minima eveniet error excepturi reiciendis. </p>
+<p class="body color-gray text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolorum veniam, earum minima eveniet error excepturi reiciendis. </p>
+          </code></pre>
+          </div>
+        </article>
+      </section>
+      <!-- <hr/> -->
+       <!-- Component Section -->
+       <section id="navbar">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Navbar
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Nav bar is an essential part of any modern website. Below is an example of showcasing classes related to nav.
+          </p>
+         
+          <div class="docs-example">
+          <!-- Example of component looks-->
+          <nav class="ex-nav">
+            <div class="ex-nav-logo header-2">logo</div>
+            <ul class="ex-nav-items">
+              <li class="ex-nav-item">Home</li>
+              <li class="ex-nav-item">About</li>
+              <li class="ex-nav-item">Contact</li>
+            </ul>
+          </nav>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<nav class="ex-nav">
+  <div class="ex-nav-logo">logo</div>
+  <ul class="ex-nav-items">
+    <li class="ex-nav-item">Home</li>
+    <li class="ex-nav-item">About</li>
+    <li class="ex-nav-item">Contact</li>
+  </ul>
+</nav>
+          </code></pre>
+          </div>
+        </article>
+      </section>
+      <!-- <hr/> -->
+      <!-- Component Section -->
+      <section id="lists">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Lists
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            You can style your list by using these classes. We provide the types of list styles as shown in the below example.
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+          </p>
+          <div class="docs-example list-example">
+          <!-- Example of component looks-->
+          <div>
+            <h2 class="header-2">Spaced List</h2>
+            <ul class="list">
+              <li class="list-item">Item 1</li>
+              <li class="list-item">Item 2</li>
+              <li class="list-item">Item 3</li>
+              <li class="list-item">Item 4</li>
+              <li class="list-item">Item 5</li>
+              <li class="list-item">Item 6</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="header-2">Stacked List</h2>
+            <ul class="list stacked-list">
+              <li class="list-item">Hello</li>
+              <li class="list-item">Bello</li>
+              <li class="list-item">Banana</li>
+              <li class="list-item">Gru</li>
+              <li class="list-item">Kevin</li>
+              <li class="list-item">Sturat</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="header-2">Horizontal List</h2>
+            <ul class="list hor-list">
+              <li class="list-item">Hello</li>
+              <li class="list-item">Bello</li>
+              <li class="list-item">Banana</li>
+              <li class="list-item">Gru</li>
+              <li class="list-item">Kevin</li>
+              <li class="list-item">Sturat</li>
+            </ul>
+          </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div>
+  <h2 class="header-2">Spaced List</h2>
+  <ul class="list">
+    <li class="list-item">Item 1</li>
+    <li class="list-item">Item 2</li>
+    <li class="list-item">Item 3</li>
+    <li class="list-item">Item 4</li>
+    <li class="list-item">Item 5</li>
+    <li class="list-item">Item 6</li>
+  </ul>
+</div>
+<div>
+  <h2 class="header-2">Stacked List</h2>
+  <ul class="list stacked-list">
+    <li class="list-item">Hello</li>
+    <li class="list-item">Bello</li>
+    <li class="list-item">Banana</li>
+    <li class="list-item">Gru</li>
+    <li class="list-item">Kevin</li>
+    <li class="list-item">Sturat</li>
+  </ul>
+</div>
+<div>
+  <h2 class="header-2">Horizontal List</h2>
+  <ul class="list hor-list">
+    <li class="list-item">Hello</li>
+    <li class="list-item">Bello</li>
+    <li class="list-item">Banana</li>
+    <li class="list-item">Gru</li>
+    <li class="list-item">Kevin</li>
+    <li class="list-item">Sturat</li>
+  </ul>
+</div>
+          </code></pre>
+          </div>
+        </article>
+      </section>
+       <!-- Modal Section -->
+       <section id="modals">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+            Modal
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+            Modals can be used to display a confirmation message or some type of notification or a custom content to your user. Below is an example of using a card in an modal overlay.
+          </p>
+          
+          <div class="docs-example">
+          <!-- Example of component looks-->
+            <div class="modal-overlay">
+              <div class="card modal-content">
+                <button class="btn btn-outline-danger btn-icon card-dismiss btn-no-border">
+                  <i class="bx bx-x"></i>
+                </button>
+                <div class="card-header">
+                  <p class="header-2">Lorem Ipsum</p>
+                </div>
+                <div class="card-content">
+                  <p class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+                    tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+                  </p>
+                </div>
+                <div>
+                  <div class="card-footer">
+                    <div class="card-footer-items">
+                      <button class="btn btn-danger">Close</button>
+                      <button class="btn btn-secondary">Accept</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="docs-code-example">
+          <pre><code class="html">
+<div class="modal-overlay">
+  <div class="card modal-content">
+    <button class="btn btn-outline-danger btn-icon card-dismiss btn-no-border">
+      <i class="bx bx-x"></i>
+    </button>
+    <div class="card-header">
+      <p class="header-2">Lorem Ipsum</p>
+    </div>
+    <div class="card-content">
+      <p class="body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque corporis eum
+        tenetur distinctio beatae quo suscipit mollitia temporibus consequatur!
+      </p>
+    </div>
+    <div>
+      <div class="card-footer">
+        <div class="card-footer-items">
+          <button class="btn btn-danger">Close</button>
+          <button class="btn btn-secondary">Accept</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          </code></pre>
+          </div>
+        </article>
+      </section>
+      <!-- Template -->
+      <!-- Component Section -->
+      <section id="component-name">
+        <article class="docs-article">
+          <h1 class="header-1">
+            <!-- Component Name -->
+          </h1>
+          <p class="docs-text">
+            <!-- Component explaination text -->
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+          </p>
+          <!-- <div class="docs-example"> -->
+          <!-- Example of component looks-->
+          <!-- </div> -->
+          <!-- <div class="docs-code-example"> -->
+          <!-- <pre><code class="html"> -->
+
+          <!-- </code></pre> -->
+          <!-- </div> -->
+        </article>
+        <!-- Component Variants -->
+        <article class="docs-article">
+          <h2 class="header-2">
+            <!-- Variant name -->
+          </h2>
+          <p class="docs-text">
+            <!-- Variant explaination text -->
+          </p>
+          <p class="docs-text">
+            <!-- Usage instruction -->
+          </p>
+          <p class="docs-text">
+            <!-- Example showing component variants usage. -->
+          </p>
+          <!-- <div class="docs-example"> -->
+          <!-- Examples of variant looks -->
+          <!-- </div> -->
+          <!-- <div class="docs-code-example"> -->
+          <!-- <pre><code class="html"> -->
+
+          <!-- </code></pre> -->
+          <!-- </div> -->
+        </article>
+      </section>
+      <!-- Template -->
+      </div>
+    </main>
+    <!-- Main Documentation -->
+    <button class="btn btn-icon btn-animated btn-circle to-top">
+      <div class="div-animate"></div>
+      <a href="#documentation">
+      <span class="btn-text">
+        <i class='bx bx-up-arrow-alt' ></i>
+      </span>
+    </a>
+    </button>
+    <!-- highlight.js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
