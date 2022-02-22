@@ -2,6 +2,18 @@
   color: var(--color-primary-500);
   font-weight: var(--font-weight-bold);
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-x {
+  display: flex;
+  justify-content: center;
+}
+
 .flex-center-y {
   display: flex;
   align-items: center;
